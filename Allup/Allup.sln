@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allup", "Allup\Allup.csproj", "{964B6337-A446-4BCA-AFD2-E87C1CA5AF32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allup", "Allup\Allup.csproj", "{6352B5DD-9FE1-48CE-BA65-AB2496787C87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{964B6337-A446-4BCA-AFD2-E87C1CA5AF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{964B6337-A446-4BCA-AFD2-E87C1CA5AF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{964B6337-A446-4BCA-AFD2-E87C1CA5AF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{964B6337-A446-4BCA-AFD2-E87C1CA5AF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6352B5DD-9FE1-48CE-BA65-AB2496787C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6352B5DD-9FE1-48CE-BA65-AB2496787C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6352B5DD-9FE1-48CE-BA65-AB2496787C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6352B5DD-9FE1-48CE-BA65-AB2496787C87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6CB6CD70-5C35-4135-8891-9EE48C391A9E}
+		SolutionGuid = {2A964781-398E-4D30-965A-3038E35EEAF3}
 	EndGlobalSection
 EndGlobal

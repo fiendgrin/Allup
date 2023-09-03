@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Allup.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230901103828_initialCatalog")]
-    partial class initialCatalog
+    [Migration("20230901065252_InitialCatalog")]
+    partial class InitialCatalog
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

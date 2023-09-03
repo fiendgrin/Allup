@@ -15,7 +15,7 @@ namespace Allup.Models
         public DateTime? DeletedAt { get; set; }
         [StringLength(100)]
         public string? DeletedBy { get; set; }
-        [Column (TypeName="date")]
+        [Column(TypeName = "date")]
         public DateTime? UpdatedAt { get; set; }
         [StringLength(100)]
         public string? UpdatedBy { get; set; }

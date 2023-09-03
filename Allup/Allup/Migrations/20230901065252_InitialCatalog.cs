@@ -4,7 +4,7 @@
 
 namespace Allup.Migrations
 {
-    public partial class initialCatalog : Migration
+    public partial class InitialCatalog : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

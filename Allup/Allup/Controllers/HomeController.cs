@@ -1,4 +1,5 @@
 ﻿using Allup.DataAccessLayer;
+using Allup.Services;
 using Allup.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,7 +20,7 @@ namespace Allup.Controllers
             HomeVM homeVM = new HomeVM();
 
             homeVM.Slider = await _context.Sliders.Where(slide => slide.IsDeleted == false).ToListAsync();
-            
+
             return View(homeVM);
         }
     }

@@ -10681,26 +10681,30 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.21",
-      "Microsoft.EntityFrameworkCore.Design >= 6.0.21",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.21",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.21",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yunisah\\.nuget\\packages\\": {}
+    "C:\\Users\\yunis\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\Allup.csproj",
+      "projectUniqueName": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\Allup.csproj",
       "projectName": "Allup",
-      "projectPath": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\Allup.csproj",
-      "packagesPath": "C:\\Users\\yunisah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\obj\\",
+      "projectPath": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\Allup.csproj",
+      "packagesPath": "C:\\Users\\yunis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\yunisah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yunis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10708,6 +10712,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -10728,12 +10733,6 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[6.0.21, )"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.21, )"
           },
