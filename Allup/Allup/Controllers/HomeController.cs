@@ -17,11 +17,17 @@ namespace Allup.Controllers
 
         public async Task<IActionResult> Index()
         {
-            HomeVM homeVM = new HomeVM();
+            HomeVM HomeVM = new HomeVM();
 
-            homeVM.Slider = await _context.Sliders.Where(slide => slide.IsDeleted == false).ToListAsync();
+            HomeVM.Sliders = await _context.Sliders.Where(s => s.IsDeleted == false).ToListAsync();
+            HomeVM.Categories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain).ToListAsync();
+            HomeVM.NewArrival = await _context.Products.Where(s => s.IsDeleted == false && s.IsNewArrival).ToListAsync();
+            HomeVM.BestSeller = await _context.Products.Where(s => s.IsDeleted == false && s.IsBestSeller).ToListAsync();
+            HomeVM.Featured = await _context.Products.Where(s => s.IsDeleted == false && s.IsFeatured).ToListAsync();
 
-            return View(homeVM);
+
+
+            return View(HomeVM);
         }
     }
 }
