@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Product>
+
+@foreach (Product product in Model)
+{
+    <a class="d-block" href="#">
+        <li class="d-block justify-content-between align-items-center">
+            <img class="" style="width:100px" src="/assets/images/product/@product.MainImage">
+            <p>@product.Title</p>
+            <span class="price-sale">€@product.Price</span>
+        </li>
+    </a>
+}

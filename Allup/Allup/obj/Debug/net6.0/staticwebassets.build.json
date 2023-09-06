@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s2pIKhzDdLaYvMrMV1X28vCle3KadH9DteW6EhKbGS4=",
+  "Hash": "Dacb45Z9Gu/c/O3B5OXNvKPZ7frUEsLVPXqoQjqx+ig=",
   "Source": "Allup",
   "BasePath": "_content/Allup",
   "Mode": "Default",
@@ -2378,6 +2378,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\Custom.js",
+      "SourceId": "Allup",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "BasePath": "_content/Allup",
+      "RelativePath": "assets/js/Custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\Custom.js"
     },
     {
       "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\main.js",

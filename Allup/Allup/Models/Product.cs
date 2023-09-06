@@ -36,5 +36,7 @@ namespace Allup.Models
         public Category Category { get; set; }
         public int? BrandId { get; set; }
         public Brand? Brand { get;}
+
+        public IEnumerable<ProductImage>? ProductImages { get; set;}
     }
 }

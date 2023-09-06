@@ -557,6 +557,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\special-products\\special-products-8.jpg"
     },
     {
+      "Id": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\Custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Custom.js"
+    },
+    {
       "Id": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },

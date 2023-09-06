@@ -2,6 +2,7 @@
 using Allup.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace Allup.Controllers
 {
@@ -30,7 +31,7 @@ namespace Allup.Controllers
                 p.Brand != null ? p.Brand.Name.ToLower().Contains(search.ToLower()) : true)).ToListAsync();
 
             }
-            else 
+            else
             {
                 products = await _context.Products
                 .Where(p => p.IsDeleted == false || (
@@ -39,8 +40,26 @@ namespace Allup.Controllers
                 p.Category.Name.ToLower().Contains(search.ToLower())
                 ).ToListAsync();
             }
-            return Json(products);
-           
+
+            return PartialView("_SearchPartial", products);
+
+            //return Json(products);
+
         }
+
+        public async Task<IActionResult> Modal(int? id)
+        {
+            if (id == null) return BadRequest("Id is required");
+
+            Product product = await _context.Products
+                .Include(p => p.ProductImages.Where(pi => pi.IsDeleted == false)).
+                FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == id);
+
+            if (product == null) return NotFound("This Id does not exist");
+
+            return PartialView("_ModalPartial");
+        }
+
+       
     }
 }

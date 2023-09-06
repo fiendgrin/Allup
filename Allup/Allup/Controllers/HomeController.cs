@@ -29,5 +29,7 @@ namespace Allup.Controllers
 
             return View(HomeVM);
         }
+
+        
     }
 }
