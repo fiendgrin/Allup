@@ -15,9 +15,36 @@ namespace Allup.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            ViewBag.LoadPageIndex = 1;
+            IQueryable<Product> products = _context.Products
+                .Where(p => p.IsDeleted == false)
+                .OrderByDescending(p => p.Id);
+
+            ViewBag.TotaPage = (int)Math.Ceiling((decimal)products.Count() / 12);
+            products = products.Take(12);
+            return View(new List<Product>(products));
+        }
+
+        public async Task<IActionResult> LoadMore(int? pageIndex)
+        {
+            if (pageIndex == null) return BadRequest();
+
+            if (pageIndex <= 0) return BadRequest();
+
+            IQueryable<Product> products = _context.Products
+                .Where(p => p.IsDeleted == false)
+                .OrderByDescending(p => p.Id);
+
+                
+            int maxPage = (int)Math.Ceiling((decimal)products.Count() / 12);
+
+            if (pageIndex > maxPage) return BadRequest();
+
+            products = products.Skip((int)pageIndex * 12).Take(12);
+
+            return PartialView("_LoadMorePartial", new List<Product>(products));
         }
 
         public async Task<IActionResult> Search(string search, int? categoryId)
@@ -57,9 +84,9 @@ namespace Allup.Controllers
 
             if (product == null) return NotFound("This Id does not exist");
 
-            return PartialView("_ModalPartial");
+            return PartialView("_ModalPartial", product);
         }
 
-       
+
     }
 }

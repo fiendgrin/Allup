@@ -25,17 +25,14 @@ namespace Allup.Controllers
         {
             if (id == null) return BadRequest("Id is required");
 
-            Product product = await _context.Products
-                .Include(p => p.ProductImages.Where(pi => pi.IsDeleted == false)).
-                FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == id);
+            if (!await _context.Products.AnyAsync(p=>p.IsDeleted == false && p.Id == id)) return NotFound("This Id does not exist");
 
-            if (product == null) return NotFound("This Id does not exist");
+            string? basket = Request.Cookies["basket"];
 
-            string basket = Request.Cookies["Basket"];
-
-            if (string.IsNullOrWhiteSpace(basket))
+            List<BasketVM> basketVMs = null;
+            if (!string.IsNullOrWhiteSpace(basket))
             {
-                List<BasketVM> basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
+                basketVMs = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
 
                 if (basketVMs.Exists(b => b.Id == id))
                 {
@@ -43,48 +40,42 @@ namespace Allup.Controllers
                 }
                 else
                 {
-                    BasketVM basketVM = new BasketVM
+                    basketVMs.Add(new BasketVM
                     {
-                        Id = product.Id,
-                        Title = product.Title,
-                        ExTax = product.ExTag,
-                        Image = product.MainImage,
-                        Price = product.Price,
+                        Id = (int)id,
                         Count = 1
-                    };
-                    basketVMs.Add(basketVM);
+                    });
                 }
-
-                string cookie = JsonConvert.SerializeObject(basketVMs);
-
-                Response.Cookies.Append("Basket", cookie);
             }
             else
             {
-                BasketVM basketVM = new BasketVM
+
+                basketVMs = new List<BasketVM> { new BasketVM
                 {
-                    Id = product.Id,
-                    Title = product.Title,
-                    ExTax = product.ExTag,
-                    Image = product.MainImage,
-                    Price = product.Price,
+                    Id = (int)id,
                     Count = 1
-                };
-                List<BasketVM> basketVMs = new List<BasketVM> { basketVM };
+                }
+            };
 
-                string cookie = JsonConvert.SerializeObject(basketVMs);
-
-                Response.Cookies.Append("Basket", cookie);
             }
 
-            return Ok();
+            basket = JsonConvert.SerializeObject(basketVMs);
+
+            Response.Cookies.Append("basket", basket);
+
+            foreach (BasketVM basketVM in basketVMs)
+            {
+                Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.Id);
+                basketVM.Title = product.Title;
+                basketVM.Image = product.MainImage;
+                basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+                basketVM.ExTax = product.ExTag;
+
+            }
+
+            return PartialView("_BasketPartial", basketVMs);
         }
 
-        public IActionResult GetCookies()
-        {
-            string cookie = Request.Cookies["Basket"];
-
-            return Ok();
-        }
+        
     }
 }

@@ -30,6 +30,11 @@ namespace Allup.Controllers
             return View(HomeVM);
         }
 
-        
+        public IActionResult GetCookies()
+        {
+            string cookie = Request.Cookies["basket"];
+
+            return Ok(cookie);
+        }
     }
 }
