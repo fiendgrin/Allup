@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     $('#searchInput').keyup(function () {
-        if (this.val().trim().length == 0) {
+        if ($(this).val().trim().length == 0) {
             $('#searchBody').html('');
         }
     });
@@ -9,7 +9,7 @@
         e.preventDefault();
         let search = $(' #searchInput').val().trim();
         let categoryId = $('#categoryId').val();
-        let searchUrl = 'product/search?search=' + search + 'categoryId=' + categoryId;
+        let searchUrl = 'product/search?search=' + search + '&' + 'categoryId=' + categoryId;
 
         if (search.length >= 3) {
             fetch(searchUrl)
@@ -26,7 +26,7 @@
 
         let url = $(this).attr('href');
         fetch(url)
-            .then((res) => res.json())
+            .then((res) => res.text())
             .then((data) => {
                 $('.modal-content').html(data);
 
