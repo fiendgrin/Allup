@@ -67,15 +67,20 @@
     $(document).on('click', '.loadMoreBtn', function (e) {
         e.preventDefault();
         let url = $(this).attr('href');
+        console.log(url);
         let pageIndex = $(this).data('pageindex');
+        console.log(pageIndex);
+
         let totalPage = $(this).data('maxpage');
-        if (pageIndex > 0 && pageIndex < totalPage) {
+        console.log(totalPage);
+
+        if (pageIndex > 0 && (pageIndex + 1) < totalPage) {
             fetch(url + '?pageIndex=' + pageIndex)
                 .then(res => res.text())
                 .then(data => {
                     $('.productContainer').append(data)
                 });
-        } else if (pageIndex == totalPage) {
+        } else if (pageIndex == (totalPage - 1)) {
             fetch(url + '?pageIndex=' + pageIndex)
                 .then(res => res.text())
                 .then(data => {

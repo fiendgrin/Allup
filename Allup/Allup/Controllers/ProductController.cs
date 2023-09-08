@@ -1,5 +1,6 @@
 ﻿using Allup.DataAccessLayer;
 using Allup.Models;
+using Allup.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -15,16 +16,14 @@ namespace Allup.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int currentPage = 1)
         {
             ViewBag.LoadPageIndex = 1;
             IQueryable<Product> products = _context.Products
                 .Where(p => p.IsDeleted == false)
                 .OrderByDescending(p => p.Id);
 
-            ViewBag.TotaPage = (int)Math.Ceiling((decimal)products.Count() / 12);
-            products = products.Take(12);
-            return View(new List<Product>(products));
+            return View(PageNatedList<Product>.Create(products, currentPage,4,10));
         }
 
         public async Task<IActionResult> LoadMore(int? pageIndex)
@@ -37,9 +36,8 @@ namespace Allup.Controllers
                 .Where(p => p.IsDeleted == false)
                 .OrderByDescending(p => p.Id);
 
-                
-            int maxPage = (int)Math.Ceiling((decimal)products.Count() / 12);
 
+            int maxPage = (int)Math.Ceiling((decimal)products.Count() / 12);
             if (pageIndex > maxPage) return BadRequest();
 
             products = products.Skip((int)pageIndex * 12).Take(12);

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Te3Tn5LxNIlVxc2TDZc2WObMuaJSh3qlM7EBpVeUfXY=",
+  "Hash": "Dacb45Z9Gu/c/O3B5OXNvKPZ7frUEsLVPXqoQjqx+ig=",
   "Source": "Allup",
   "BasePath": "_content/Allup",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Allup\\wwwroot",
       "Source": "Allup",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\animate.css",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\animate.css",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/animate.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\animate.css"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\bootstrap.min.css",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\bootstrap.min.css",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/bootstrap.min.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\default.css",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\default.css",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/default.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\default.css"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\fontawesome.min.css",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\fontawesome.min.css",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/fontawesome.min.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\fontawesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_444444_256x240.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_444444_256x240.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/images/ui-icons_444444_256x240.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\images\\ui-icons_444444_256x240.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_555555_256x240.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_555555_256x240.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/images/ui-icons_555555_256x240.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\images\\ui-icons_555555_256x240.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_777620_256x240.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_777620_256x240.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/images/ui-icons_777620_256x240.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\images\\ui-icons_777620_256x240.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_777777_256x240.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_777777_256x240.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/images/ui-icons_777777_256x240.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\images\\ui-icons_777777_256x240.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_cc0000_256x240.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_cc0000_256x240.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/images/ui-icons_cc0000_256x240.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\images\\ui-icons_cc0000_256x240.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_ffffff_256x240.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\images\\ui-icons_ffffff_256x240.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/images/ui-icons_ffffff_256x240.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\images\\ui-icons_ffffff_256x240.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\ionicons.min.css",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\ionicons.min.css",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/ionicons.min.css",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\ionicons.min.css"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\jquery-ui.min.css",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\jquery-ui.min.css",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/jquery-ui.min.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\jquery-ui.min.css"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\slick.css",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\plugins\\slick.css",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/plugins/slick.css",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\plugins\\slick.css"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\style.css",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\css\\style.css",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/css/style.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-brands-400.eot",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-brands-400.svg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.svg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-brands-400.woff",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.woff"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400d41d.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-brands-400d41d.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-brands-400d41d.eot",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-brands-400d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-light-300.eot",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-light-300.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.svg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.svg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-light-300.svg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-light-300.svg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.ttf",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.ttf",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-light-300.ttf",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-light-300.ttf"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.woff",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.woff",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-light-300.woff",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-light-300.woff"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.woff2",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300.woff2",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-light-300.woff2",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-light-300.woff2"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300d41d.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-light-300d41d.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-light-300d41d.eot",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-light-300d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-regular-400.eot",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-regular-400.svg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.svg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-regular-400.woff",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.woff"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400d41d.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-regular-400d41d.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-regular-400d41d.eot",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-regular-400d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-solid-900.eot",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-solid-900.svg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.svg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-solid-900.woff",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.woff"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900d41d.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\fa-solid-900d41d.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/fa-solid-900d41d.eot",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fa-solid-900d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\ionicons28b5.eot",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\ionicons28b5.eot",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/ionicons28b5.eot",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\ionicons28b5.eot"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\ionicons28b5.svg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\ionicons28b5.svg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/ionicons28b5.svg",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\ionicons28b5.svg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\ionicons28b5.ttf",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\ionicons28b5.ttf",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/ionicons28b5.ttf",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\ionicons28b5.ttf"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\ionicons28b5.woff",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\fonts\\ionicons28b5.woff",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/fonts/ionicons28b5.woff",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\ionicons28b5.woff"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\author-1.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\author-1.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/author-1.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\author-1.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-1.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-1.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-1.png",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-1.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-10.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-10.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-10.jpg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-10.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-11.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-11.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-11.jpg",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-11.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-12.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-12.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-12.jpg",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-12.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-13.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-13.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-13.jpg",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-13.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-2.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-2.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-2.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-2.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-3.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-3.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-3.jpg",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-4.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-4.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-4.jpg",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-5.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-5.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-5.jpg",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-6.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-6.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-6.jpg",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-7.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-7.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-7.jpg",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-8.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-8.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-8.jpg",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-9.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-9.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-9.jpg",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-9.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon1.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon1.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-icon/icon1.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-icon\\icon1.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon2.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon2.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-icon/icon2.png",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-icon\\icon2.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon3.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon3.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-icon/icon3.png",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-icon\\icon3.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon4.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon4.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-icon/icon4.png",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-icon\\icon4.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon5.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-icon\\icon5.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-icon/icon5.png",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-icon\\icon5.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-image.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\banner-image.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/banner-image.png",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banner-image.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\bg_testimonial.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\bg_testimonial.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/bg_testimonial.jpg",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\bg_testimonial.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\bg-cound.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\bg-cound.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/bg-cound.png",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\bg-cound.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\bg-footer.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\bg-footer.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/bg-footer.jpg",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\bg-footer.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\bg-newletter.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\bg-newletter.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/bg-newletter.jpg",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\bg-newletter.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\blog-1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\blog-1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/blog-1.jpg",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\blog-2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\blog-2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/blog-2.jpg",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\blog-3.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\blog-3.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/blog-3.jpg",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\blog-4.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\blog-4.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/blog-4.jpg",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/brand/brand-1.jpg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\brand\\brand-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/brand/brand-2.jpg",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\brand\\brand-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-3.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-3.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/brand/brand-3.jpg",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\brand\\brand-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-4.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-4.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/brand/brand-4.jpg",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\brand\\brand-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-5.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-5.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/brand/brand-5.jpg",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\brand\\brand-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-6.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\brand\\brand-6.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/brand/brand-6.jpg",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\brand\\brand-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-1.jpg",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-10.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-10.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-10.jpg",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-10.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-11.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-11.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-11.jpg",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-11.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-12.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-12.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-12.jpg",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-12.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-2.jpg",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-3.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-3.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-3.jpg",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-4.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-4.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-4.jpg",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-5.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-5.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-5.jpg",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-6.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-6.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-6.jpg",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-7.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-7.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-7.jpg",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-8.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-8.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-8.jpg",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-9.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\category-9.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/category-9.jpg",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\category-9.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\comment-author.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\comment-author.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/comment-author.jpg",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\comment-author.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\custom_banner.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\custom_banner.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/custom_banner.jpg",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\custom_banner.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\favicon.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\favicon.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/favicon.png",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\flag\\1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\flag\\1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/flag/1.jpg",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\flag\\1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\flag\\2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\flag\\2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/flag/2.jpg",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\flag\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\icon-1.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\icon-1.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/icon-1.png",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\icon-1.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\icon-2.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\icon-2.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/icon-2.png",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\icon-2.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\icon-3.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\icon-3.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/icon-3.png",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\icon-3.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\logo.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\logo.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/logo.png",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\logo-white.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\logo-white.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/logo-white.png",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo-white.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\payment.png",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\payment.png",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/payment.png",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\payment.png"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-1.jpg",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-10.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-10.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-10.jpg",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-10.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-11.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-11.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-11.jpg",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-11.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-12.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-12.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-12.jpg",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-12.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-13.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-13.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-13.jpg",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-13.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-14.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-14.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-14.jpg",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-14.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-15.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-15.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-15.jpg",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-15.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-16.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-16.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-16.jpg",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-16.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-17.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-17.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-17.jpg",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-17.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-2.jpg",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-3.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-3.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-3.jpg",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-4.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-4.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-4.jpg",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-5.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-5.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-5.jpg",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-6.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-6.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-6.jpg",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-7.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-7.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-7.jpg",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-8.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-8.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-8.jpg",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-9.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product\\product-9.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product/product-9.jpg",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-9.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-cart\\cart-1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-cart\\cart-1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product-cart/cart-1.jpg",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product-cart\\cart-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-cart\\cart-2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-cart\\cart-2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product-cart/cart-2.jpg",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product-cart\\cart-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product-quick/product-1.jpg",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product-quick\\product-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product-quick/product-2.jpg",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product-quick\\product-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-3.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-3.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product-quick/product-3.jpg",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product-quick\\product-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-4.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-4.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product-quick/product-4.jpg",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product-quick\\product-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-5.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\product-quick\\product-5.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/product-quick/product-5.jpg",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product-quick\\product-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/slider-1.jpg",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\slider-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/slider-2.jpg",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\slider-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-3.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-3.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/slider-3.jpg",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\slider-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-4.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-4.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/slider-4.jpg",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\slider-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-5.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-5.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/slider-5.jpg",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\slider-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-6.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-6.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/slider-6.jpg",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\slider-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-7.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-7.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/slider-7.jpg",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\slider-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-8.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\slider-8.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/slider-8.jpg",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\slider-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-1.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-1.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/special-products/special-products-1.jpg",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-2.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-2.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/special-products/special-products-2.jpg",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-3.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-3.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/special-products/special-products-3.jpg",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-4.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-4.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/special-products/special-products-4.jpg",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-5.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-5.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/special-products/special-products-5.jpg",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-5.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-6.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-6.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/special-products/special-products-6.jpg",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-6.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-7.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-7.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/special-products/special-products-7.jpg",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-7.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-8.jpg",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\images\\special-products\\special-products-8.jpg",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/images/special-products/special-products-8.jpg",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-8.jpg"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\Custom.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\Custom.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/Custom.js",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\Custom.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\main.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\main.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/main.js",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\map-script.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\map-script.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/map-script.js",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\map-script.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\bootstrap.min.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\bootstrap.min.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/plugins/bootstrap.min.js",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\plugins\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\jquery.countdown.min.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\jquery.countdown.min.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/plugins/jquery.countdown.min.js",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\plugins\\jquery.countdown.min.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\jquery-ui.min.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\jquery-ui.min.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/plugins/jquery-ui.min.js",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\plugins\\jquery-ui.min.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\popper.min.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\popper.min.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/plugins/popper.min.js",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\plugins\\popper.min.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\slick.min.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\plugins\\slick.min.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/plugins/slick.min.js",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\plugins\\slick.min.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/vendor/jquery-1.12.4.min.js",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\vendor\\modernizr-3.7.1.min.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\js\\vendor\\modernizr-3.7.1.min.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/js/vendor/modernizr-3.7.1.min.js",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\modernizr-3.7.1.min.js"
     },
     {
-      "Identity": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\plugins\\js\\ajax-contact.js",
+      "Identity": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\assets\\plugins\\js\\ajax-contact.js",
       "SourceId": "Allup",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\yunisah\\source\\repos\\Allup\\Allup\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yunis\\source\\repos\\Allup\\Allup\\wwwroot\\",
       "BasePath": "_content/Allup",
       "RelativePath": "assets/plugins/js/ajax-contact.js",
       "AssetKind": "All",
