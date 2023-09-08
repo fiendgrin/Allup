@@ -4,18 +4,24 @@ using Allup.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System.Drawing.Printing;
 
 namespace Allup.Controllers
 {
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;
-
+        private readonly int _pageSize = 8;
         public ProductController(AppDbContext context)
         {
+
             _context = context;
         }
-
+        //Actions
+        //1.Index
+        //2.LoadMore
+        //3.Search
+        //4.Modal
         public async Task<IActionResult> Index(int currentPage = 1)
         {
             ViewBag.LoadPageIndex = 1;
@@ -23,7 +29,7 @@ namespace Allup.Controllers
                 .Where(p => p.IsDeleted == false)
                 .OrderByDescending(p => p.Id);
 
-            return View(PageNatedList<Product>.Create(products, currentPage,4,10));
+            return View(PageNatedList<Product>.Create(products, currentPage, _pageSize, 5));
         }
 
         public async Task<IActionResult> LoadMore(int? pageIndex)
@@ -37,10 +43,10 @@ namespace Allup.Controllers
                 .OrderByDescending(p => p.Id);
 
 
-            int maxPage = (int)Math.Ceiling((decimal)products.Count() / 12);
+            int maxPage = (int)Math.Ceiling((decimal)products.Count() / _pageSize);
             if (pageIndex > maxPage) return BadRequest();
 
-            products = products.Skip((int)pageIndex * 12).Take(12);
+            products = products.Skip((int)pageIndex * _pageSize).Take(_pageSize);
 
             return PartialView("_LoadMorePartial", new List<Product>(products));
         }
