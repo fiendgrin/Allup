@@ -54,7 +54,7 @@
 
     });
 
-    $(document).on('click', '.addBasket, .product-close',function (e) {
+    $(document).on('click', '.addBasket, .product-close', function (e) {
         e.preventDefault();
         let url = $(this).attr('href');
         fetch(url)
@@ -62,6 +62,33 @@
             .then(data => {
                 $('.header-cart').html(data)
             });
+    });
+
+    $(document).on('click', '.deleteProduct, .product-close', function (e) {
+        e.preventDefault();
+        let url = $('.product-close').attr('href');
+        fetch(url)
+            .then(res => res.text())
+            .then(data => {
+                $('.header-cart').html(data)
+                $('#totalCart').html($('#totalBasket').html())
+                $('#subTotalCart').html($('#subTotalBasket').html())
+                $('#taxesCart').html($('#taxesBasket').html())
+
+            });
+        url = $('.deleteProduct').attr('href');
+        fetch(url)
+            .then(res => res.text())
+            .then(data => {
+
+                $('#cartBody').html(data)
+                $('#totalCart').html($('#totalBasket').html())
+                $('#subTotalCart').html($('#subTotalBasket').html())
+                $('#taxesCart').html($('#taxesBasket').html())
+
+
+            });
+
     });
 
     $(document).on('click', '.loadMoreBtn', function (e) {

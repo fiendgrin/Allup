@@ -22,7 +22,7 @@
                             </ul>
                             @if (prod.DiscountedPrice != null && prod.DiscountedPrice > 0)
                             {
-                                <span class="discount-product">-@((100 - ((prod.DiscountedPrice * 100) / prod.Price)).ToString("#.##"))</span>
+                                <span style="font-size:12px;" class="discount-product">-@((100 - ((prod.DiscountedPrice * 100) / prod.Price)).ToString("#.##"))%</span>
                             }
                         </div>
                         <div class="product-content">

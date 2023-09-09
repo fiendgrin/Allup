@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<BasketVM>
 
 <div class="cart-btn">
-    <a href="#">
+    <a asp-controller="Cart" asp-action="Index">
         <i class="icon ion-bag"></i>
         <span class="text">Cart :</span>
         <span class="total">$@Model.Sum(m=>m.Count * (m.Price + m.ExTax))</span>
@@ -32,16 +32,16 @@
         <div class="cart-subtotals">
             <div class="products price_inline">
                 <span class="label">Subtotal</span>
-                <span class="value">€@Model.Sum(m=>m.Count * m.Price)</span>
+                <span id="totalBasket" class="value">€@Model.Sum(m=>m.Count * m.Price)</span>
             </div>
             <div class="tax price_inline">
                 <span class="label">Taxes</span>
-                <span class="value">€@Model.Sum(m=>m.Count * m.ExTax)</span>
+                <span id="taxesBasket" class="value">€@Model.Sum(m=>m.Count * m.ExTax)</span>
             </div>
         </div>
         <div class="cart-total price_inline">
             <span class="label">Total</span>
-            <span class="value">€@Model.Sum(m=>m.Count * (m.Price + m.ExTax))</span>
+            <span id="subTotalBasket" class="value">€@Model.Sum(m=>m.Count * (m.Price + m.ExTax))</span>
         </div>
     </div> <!-- price content -->
     <div class="checkout text-center">

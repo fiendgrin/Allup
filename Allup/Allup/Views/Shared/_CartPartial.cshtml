@@ -1,0 +1,42 @@
+﻿@model IEnumerable<BasketVM>
+
+@foreach (BasketVM basketVM in Model)
+{
+    <tr>
+        <td>
+            <div class="product-image">
+                <img src="assets/images/product/@basketVM.Image" alt="cart">
+            </div>
+        </td>
+        <td>
+            <div class="product-title">
+                <h4 class="title"><a href="single-product.html">@basketVM.Title</a></h4>
+            </div>
+        </td>
+        <td>
+            <div class="product-price">
+                <span class="price">€@basketVM.Price</span>
+            </div>
+        </td>
+        <td>
+            <div class="product-quantity">
+                <div class="quantity mt-15 d-flex">
+                    <button type="button" class="sub"><i class="fal fa-minus"></i></button>
+                    <input type="text" value="@basketVM.Count" />
+                    <button type="button" class="add"><i class="fal fa-plus"></i></button>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="product-total">
+                <span class="total-amount">€@((basketVM.Price + basketVM.ExTax) * basketVM.Count)</span>
+            </div>
+        </td>
+        <td>
+            <div class="product-delete">
+                <a class="deleteProduct" asp-controller="Cart" asp-action="RemoveCart" asp-route-id="@basketVM.Id"><i class="fal fa-trash-alt"></i></a>
+            </div>
+        </td>
+    </tr>
+}
+
