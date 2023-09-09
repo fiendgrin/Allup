@@ -16,16 +16,23 @@ namespace Allup.Controllers
             _context = context;
         }
 
+
+        //1.Index
+        //2.AddBasket
+        //3.RemoveBasket
+
+
+        //1.Index
         public IActionResult Index()
         {
             return View();
         }
-
+        //2.AddBasket
         public async Task<IActionResult> AddBasket(int? id)
         {
             if (id == null) return BadRequest("Id is required");
 
-            if (!await _context.Products.AnyAsync(p=>p.IsDeleted == false && p.Id == id)) return NotFound("This Id does not exist");
+            if (!await _context.Products.AnyAsync(p => p.IsDeleted == false && p.Id == id)) return NotFound("This Id does not exist");
 
             string? basket = Request.Cookies["basket"];
 
@@ -75,7 +82,34 @@ namespace Allup.Controllers
 
             return PartialView("_BasketPartial", basketVMs);
         }
+        //3.RemoveBasket
+        public async Task<IActionResult> RemoveBasket(int? id)
+        {
+            if (id == null) return BadRequest("Id is required");
 
-        
+            string? basket = Request.Cookies["basket"];
+
+            List<BasketVM>? ProductsInBasket = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
+
+            bool IsRemoved = ProductsInBasket.Remove(ProductsInBasket.FirstOrDefault(p => p.Id == id));
+
+            if (!IsRemoved) return NotFound("This Id does not exist in this basket");
+
+            basket = JsonConvert.SerializeObject(ProductsInBasket);
+
+            Response.Cookies.Append("basket", basket);
+
+            foreach (BasketVM basketVM in ProductsInBasket)
+            {
+                Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.Id);
+                basketVM.Title = product.Title;
+                basketVM.Image = product.MainImage;
+                basketVM.Price = product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price;
+                basketVM.ExTax = product.ExTag;
+
+            }
+
+            return PartialView("_BasketPartial", ProductsInBasket);
+        }
     }
 }

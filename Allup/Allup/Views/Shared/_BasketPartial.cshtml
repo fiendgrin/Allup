@@ -9,7 +9,7 @@
     </a>
 </div>
 <div class="mini-cart">
-    <ul class="cart-items">
+    <ul style="max-height:252px" class="overflow-auto cart-items">
         @foreach(BasketVM basketVM in Model)
         {
             <li>
@@ -19,9 +19,9 @@
                         <span class="product-quantity">@(basketVM.Count)x</span>
                     </div>
                     <div class="cart-item-content media-body">
-                        <h5 class="product-name"><a href="single-product.html">New Balance Fresh Foam LAZR</a></h5>
+                        <h5 class="product-name"><a href="single-product.html">@basketVM.Title</a></h5>
                         <span class="product-price">€@basketVM.Price</span>
-                        <a href="#" class="product-close"><i class="fal fa-times"></i></a>
+                        <a asp-controller="Basket" asp-action="RemoveBasket" asp-route-Id="@basketVM.Id" class="product-close"><i class="fal fa-times"></i></a>
                     </div>
                 </div>
             </li>
@@ -36,7 +36,7 @@
             </div>
             <div class="tax price_inline">
                 <span class="label">Taxes</span>
-                <span class="value">€@Model.Sum(m=>m.Count * m.ExTax))</span>
+                <span class="value">€@Model.Sum(m=>m.Count * m.ExTax)</span>
             </div>
         </div>
         <div class="cart-total price_inline">

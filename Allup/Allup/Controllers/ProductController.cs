@@ -22,6 +22,8 @@ namespace Allup.Controllers
         //2.LoadMore
         //3.Search
         //4.Modal
+
+        //Index
         public async Task<IActionResult> Index(int currentPage = 1)
         {
             ViewBag.LoadPageIndex = 1;
@@ -31,7 +33,7 @@ namespace Allup.Controllers
 
             return View(PageNatedList<Product>.Create(products, currentPage, _pageSize, 5));
         }
-
+        //LoadMore
         public async Task<IActionResult> LoadMore(int? pageIndex)
         {
             if (pageIndex == null) return BadRequest();
@@ -50,7 +52,7 @@ namespace Allup.Controllers
 
             return PartialView("_LoadMorePartial", new List<Product>(products));
         }
-
+        //Search
         public async Task<IActionResult> Search(string search, int? categoryId)
         {
             List<Product> products = null;
@@ -74,10 +76,8 @@ namespace Allup.Controllers
 
             return PartialView("_SearchPartial", products);
 
-            //return Json(products);
-
         }
-
+        //Modal
         public async Task<IActionResult> Modal(int? id)
         {
             if (id == null) return BadRequest("Id is required");

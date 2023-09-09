@@ -54,7 +54,7 @@
 
     });
 
-    $('.addBasket').click(function (e) {
+    $(document).on('click', '.addBasket, .product-close',function (e) {
         e.preventDefault();
         let url = $(this).attr('href');
         fetch(url)
