@@ -1,4 +1,11 @@
 ﻿$(document).ready(function () {
+    //1.Search
+    //2.Modal
+    //3.BasketAndCart
+    //4.LoadMore
+    //5.NavBarActive
+    //=====================================================
+    //1.Search
     $('#searchInput').keyup(function () {
         if ($(this).val().trim().length == 0) {
             $('#searchBody').html('');
@@ -21,6 +28,7 @@
 
     });
 
+    //2.Modal
     $('.modalBtn').click(function (e) {
         e.preventDefault();
 
@@ -54,6 +62,7 @@
 
     });
 
+    //3.BasketAndCart
     $(document).on('click', '.addBasket, .product-close', function (e) {
         e.preventDefault();
         let url = $(this).attr('href');
@@ -87,11 +96,12 @@
                 $('#subTotalCart').html($('#subTotalBasket').html());
                 $('#taxesCart').html($('#taxesBasket').html());
 
-              
+
             });
 
     });
 
+    //4.LoadMore
     $(document).on('click', '.loadMoreBtn', function (e) {
         e.preventDefault();
         let url = $(this).attr('href');
@@ -118,5 +128,30 @@
         }
         pageIndex++;
         $('.loadMoreBtn').data("pageindex", pageIndex)
+    });
+
+    //5.NavBarActive
+
+    let arr = $('#navBarMenuContent').children();
+
+    $(window).on("load", function () {
+        for (var i = 0; i < arr.length; i++)
+        {
+            let path = "/" + $(arr[i]).find("a:eq(0)").text();
+            if (window.location.pathname == path) {
+                $(arr[i]).addClass('active');
+            } else
+            {
+                $(arr[i]).removeClass('active')
+            }
+            if (window.location.pathname == "/" && path == "/Home") {
+                $(arr[i]).addClass('active');
+            } else if (window.location.pathname == "/Product" && path == "/Shop")
+            {
+                $(arr[i]).addClass('active');
+
+            }
+
+        }
     });
 });
