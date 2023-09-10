@@ -17,17 +17,7 @@ namespace Allup.Controllers
 
         public async Task<IActionResult> Index()
         {
-            HomeVM HomeVM = new HomeVM();
-
-            HomeVM.Sliders = await _context.Sliders.Where(s => s.IsDeleted == false).ToListAsync();
-            HomeVM.Categories = await _context.Categories.Where(c => c.IsDeleted == false && c.IsMain).ToListAsync();
-            HomeVM.NewArrival = await _context.Products.Where(s => s.IsDeleted == false && s.IsNewArrival).ToListAsync();
-            HomeVM.BestSeller = await _context.Products.Where(s => s.IsDeleted == false && s.IsBestSeller).ToListAsync();
-            HomeVM.Featured = await _context.Products.Where(s => s.IsDeleted == false && s.IsFeatured).ToListAsync();
-
-
-
-            return View(HomeVM);
+            return View();
         }
 
         public IActionResult GetCookies()
