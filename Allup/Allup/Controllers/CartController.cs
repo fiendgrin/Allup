@@ -40,7 +40,7 @@ namespace Allup.Controllers
 
             return View(basketVMs);
         }
-        public async Task<IActionResult> RemoveCart(int? id) 
+        public async Task<IActionResult> RemoveCart(int? id)
         {
             if (id == null) return BadRequest("Id is required");
 
@@ -48,9 +48,9 @@ namespace Allup.Controllers
 
             List<BasketVM>? ProductsInCart = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
 
-            bool IsRemoved = ProductsInCart.Remove(ProductsInCart.FirstOrDefault(p => p.Id == id));
+            if (!ProductsInCart.Any(p => p.Id == id)) return NotFound("Id Not Found");
 
-            if (!IsRemoved) return NotFound("This Id does not exist in this basket");
+            ProductsInCart.RemoveAll(p=>p.Id == id);
 
             basket = JsonConvert.SerializeObject(ProductsInCart);
 
@@ -65,7 +65,9 @@ namespace Allup.Controllers
                 basketVM.ExTax = product.ExTag;
 
             }
-            return PartialView("_CartPartial",ProductsInCart);
+
+
+            return PartialView("_CartPartial", ProductsInCart);
         }
     }
 }

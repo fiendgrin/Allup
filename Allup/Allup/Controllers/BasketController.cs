@@ -91,9 +91,10 @@ namespace Allup.Controllers
 
             List<BasketVM>? ProductsInBasket = JsonConvert.DeserializeObject<List<BasketVM>>(basket);
 
-            bool IsRemoved = ProductsInBasket.Remove(ProductsInBasket.FirstOrDefault(p => p.Id == id));
+            
+            if (!ProductsInBasket.Any(p => p.Id == id)) return NotFound("Id Not Found");
 
-            if (!IsRemoved) return NotFound("This Id does not exist in this basket");
+            ProductsInBasket.RemoveAll(p => p.Id == id);
 
             basket = JsonConvert.SerializeObject(ProductsInBasket);
 

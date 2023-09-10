@@ -29,12 +29,12 @@
         </td>
         <td>
             <div class="product-total">
-                <span class="total-amount">€@((basketVM.Price + basketVM.ExTax) * basketVM.Count)</span>
+                <span class="total-amount">€@((basketVM.Price * basketVM.Count))</span>
             </div>
         </td>
         <td>
             <div class="product-delete">
-                <a class="deleteProduct" asp-controller="Cart" asp-action="RemoveCart" asp-route-id="@basketVM.Id"><i class="fal fa-trash-alt"></i></a>
+                <a class="deleteProduct" asp-controller="Cart" asp-action="RemoveCart" asp-route-Id="@basketVM.Id">@basketVM.Id<i class="fal fa-trash-alt"></i></a>
             </div>
         </td>
     </tr>

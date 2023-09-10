@@ -32,7 +32,7 @@
         <div class="cart-subtotals">
             <div class="products price_inline">
                 <span class="label">Subtotal</span>
-                <span id="totalBasket" class="value">€@Model.Sum(m=>m.Count * m.Price)</span>
+                <span id="subTotalBasket" class="value">€@Model.Sum(m=>m.Count * m.Price)</span>
             </div>
             <div class="tax price_inline">
                 <span class="label">Taxes</span>
@@ -41,7 +41,7 @@
         </div>
         <div class="cart-total price_inline">
             <span class="label">Total</span>
-            <span id="subTotalBasket" class="value">€@Model.Sum(m=>m.Count * (m.Price + m.ExTax))</span>
+            <span id="totalBasket" class="value">€@Model.Sum(m=>m.Count * (m.Price + m.ExTax))</span>
         </div>
     </div> <!-- price content -->
     <div class="checkout text-center">
