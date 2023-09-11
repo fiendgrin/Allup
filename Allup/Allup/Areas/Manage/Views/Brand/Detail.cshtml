@@ -1,0 +1,45 @@
+﻿@model Brand
+@{
+    ViewData["Title"] = "Brand Deatail";
+}
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Brand Deatail</h1>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+            </div>
+        </div>
+    </div>
+    @if (Model.Products != null && Model.Products.Count() > 0)
+    {
+        <div class="col-lg-12">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Product product in Model.Products)
+                    {
+
+                        <tr>
+                            <td>@product.Title</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    <div class="mt-3 col-lg-12">
+        <a asp-area="manage" asp-controller="Brand" asp-action="Index" class="btn btn-primary">Go Home</a>
+    </div>
+</div>

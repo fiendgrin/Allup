@@ -4,7 +4,7 @@ namespace Allup.ViewModels
 {
     public class PageNatedList<T> : List<T>
     {
-        public PageNatedList(IQueryable<T> query, int currentPage, int totalPage, int pageItemCount)
+        public PageNatedList(IQueryable<T> query, int currentPage, int totalPage, int pageItemCount, int elementCount)
         {
             CurrentPage = currentPage;
             TotalPage = totalPage;
@@ -13,24 +13,46 @@ namespace Allup.ViewModels
             Start = CurrentPage - (int)Math.Ceiling((decimal)(pageItemCount - 1) / 2);
             End = CurrentPage + (int)Math.Floor((decimal)(pageItemCount - 1) / 2);
 
-            if (TotalPage >= pageItemCount)
+            if (Start <= 0)
             {
-                if (Start <= 0)
-                {
-                    End = End - (Start - 1);
-                    Start = 1;
-                }
-
-                if (End > totalPage)
-                {
-                    Start = TotalPage - (pageItemCount - 1);
-                    End = TotalPage;
-                }
+                End = End - (Start - 1);
+                Start = 1;
             }
 
+            if (End > totalPage)
+            {
+                if (TotalPage > pageItemCount)
+                {
+                    Start = TotalPage - (pageItemCount - 1);
+                }
+                else 
+                {
+                    Start = 1;
+                }
+                End = TotalPage;
+            }
+
+            //if (TotalPage >= pageItemCount)
+            //{
+            //    if (Start <= 0)
+            //    {
+            //        End = End - (Start - 1);
+            //        Start = 1;
+            //    }
+
+            //    if (End > totalPage)
+            //    {
+            //        Start = TotalPage - (pageItemCount - 1);
+            //        End = TotalPage;
+            //    }
+            //}
+
             this.AddRange(query);
+            ElementCount = elementCount;
+
         }
         public int CurrentPage { get; }
+        public int ElementCount { get; }
         public int TotalPage { get; }
         public bool HasPrev { get; }
         public bool HasNext { get; }
@@ -42,7 +64,7 @@ namespace Allup.ViewModels
         {
             int totalPage = (int)Math.Ceiling((decimal)query.Count() / elementCount);
             query = query.Skip((currentPage - 1) * elementCount).Take(elementCount);
-            return new PageNatedList<T>(query, currentPage, totalPage, pageItemCount);
+            return new PageNatedList<T>(query, currentPage, totalPage, pageItemCount,elementCount);
         }
     }
 }

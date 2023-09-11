@@ -8,9 +8,9 @@ namespace Allup.Models
         public int Id { get; set; }
         public bool IsDeleted { get; set; }
         [Column(TypeName = "date")]
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
         [StringLength(100)]
-        public string CeatedBy { get; set; }
+        public string CeatedBy { get; set; } = "Yunis";
         [Column(TypeName = "date")]
         public DateTime? DeletedAt { get; set; }
         [StringLength(100)]
