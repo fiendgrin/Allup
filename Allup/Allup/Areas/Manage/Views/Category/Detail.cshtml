@@ -1,0 +1,86 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Category Deatail";
+    int no = 0;
+}
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Category Deatail</h1>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card" style="width: 18rem;">
+            @if (Model.Image != null)
+            {
+                <img class="card-img-top" src="~/assets/images/@Model.Image" alt="Card image cap">
+            }
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+            </div>
+        </div>
+    </div>
+    @if (Model.Children != null && Model.Children.Count() > 0)
+    {
+        <div class="col-lg-12 mt-3">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Name</th>
+                        <th>Product Count</th>
+                        <th>Created At</th>
+                        <th>Created By</th>
+                        <th>Settings</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Category category in Model.Children)
+                    {
+                        no++;
+                        <tr>
+                            <td>@no</td>
+                            <td>@category.Name</td>
+                            <td>@(category.Products != null ? category.Products.Count() : 0)</td>
+                            <td>@category.CreatedAt.ToString("yyyy / MM / dd")</td>
+                            <td>@category.CeatedBy</td>
+                            <td>
+                                <a class="btn btn-primary" asp-area="manage" asp-controller="Category" asp-action="Detail" asp-route-Id="@category.Id">Detail</a>
+                                <a class="btn btn-warning" asp-area="manage" asp-controller="Category" asp-action="Update" asp-route-Id="@category.Id">Update</a>
+                                <a class="btn btn-danger" asp-area="manage" asp-controller="Category" asp-action="Delete" asp-route-Id="@category.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    @if (Model.Products != null && Model.Products.Count() > 0)
+    {
+        <div class="col-lg-12 mt-3">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Product product in Model.Products)
+                    {
+
+                        <tr>
+                            <td>@product.Title</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    <div class="mt-3 col-lg-12">
+        <a asp-area="manage" asp-controller="Category" asp-action="Index" class="btn btn-primary">Go Home</a>
+    </div>
+</div>
