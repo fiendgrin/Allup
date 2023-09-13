@@ -1,0 +1,66 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Update";
+    List<Category> categories = ViewBag.Categories;
+    SelectList selectLists = new SelectList(categories, nameof(Category.Id), nameof(Category.Name));
+}
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Category Update</h1>
+
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-check">
+                <input asp-for="IsMain" class="form-check-input">
+                <label asp-for="IsMain" class="form-check-label"></label>
+                <span asp-validation-for="IsMain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" placeholder="Name">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="imgContainer mb-3">
+                <div class="form-group">
+                    <label asp-for="File"></label>
+                    <input asp-for="File" class="form-control-file" placeholder="Image">
+                    <span asp-validation-for="File" class="text-danger"></span>
+                </div>
+               @if (!string.IsNullOrWhiteSpace(Model.Image))
+                {
+                    <div>
+                        <img style="width:100px" src="~/assets/images/@Model.Image">
+                    </div>
+                }
+            </div>
+            <div class="form-group parentContainer">
+                <label asp-for="ParentId"></label>
+                <select asp-for="ParentId" class="form-control" asp-items="selectLists">
+                    <option value="">Select a Category</option>
+                </select>
+                <span asp-validation-for="ParentId" class="text-danger"></span>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function()
+        {
+            let IsMain = $('#IsMain').val();
+
+            if(IsMain === true)
+            {
+                $('#IsMain').checked = true;
+            }
+        })
+    </script>
+}

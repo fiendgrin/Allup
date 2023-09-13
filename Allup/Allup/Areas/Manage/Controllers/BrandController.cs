@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Allup.Areas.Manage.Controllers
 {
-        [Area("manage")]
+    [Area("manage")]
     public class BrandController : Controller
     {
         private readonly AppDbContext _context;
