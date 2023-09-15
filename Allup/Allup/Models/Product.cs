@@ -20,23 +20,35 @@ namespace Allup.Models
         [StringLength(5000)]
         public string Description { get; set;}
         [StringLength(4)]
-        public string Seria { get; set; }
+        public string? Seria { get; set; }
         [Range(1, int.MaxValue)]
-        public int Number { get; set; }
+        public int? Number { get; set; }
         [StringLength(255)]
-        public string MainImage { get; set; }
+        public string? MainImage { get; set; }
         [StringLength(255)]
-        public string HoverImage { get; set; }
+        public string? HoverImage { get; set; }
         public bool IsBestSeller { get; set; }
         public bool IsNewArrival { get; set; }
         public bool IsFeatured { get; set; }
 
 
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public int? CategoryId { get; set; }
+        public Category? Category { get; set; }
         public int? BrandId { get; set; }
         public Brand? Brand { get; set; }
 
-        public IEnumerable<ProductImage>? ProductImages { get; set;}
+        public List<ProductImage>? ProductImages { get; set;}
+        public IEnumerable<ProductTag>? ProductTags { get; set; }
+
+        [NotMapped]
+        public IFormFile? MainFile { get; set; }    
+        [NotMapped]
+        public IFormFile? HoverFile { get; set; }
+        [NotMapped]
+        public IEnumerable<IFormFile>? Files { get; set; }
+        [NotMapped]
+        public IEnumerable<int>? TagIds { get; set; }
+
+
     }
 }

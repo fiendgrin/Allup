@@ -188,7 +188,7 @@ namespace Allup.Areas.Manage.Controllers
             {
                 if (category.File != null)
                 {
-                    if (category.File.ContentType != "image/jpeg")
+                    if (!category.File.ContentType.Contains("image/") )
                     {
                         ModelState.AddModelError("File", "File type should be .jpg or .jpeg");
                         return View(category);
@@ -202,7 +202,15 @@ namespace Allup.Areas.Manage.Controllers
 
                     string fileName = DateTime.UtcNow.AddHours(4).ToString("yyyyMMddHHmmssfff") + category.File.FileName.Substring(category.File.FileName.LastIndexOf("."));
 
-                    string filePath = Path.Combine(_env.WebRootPath, "assets", "images", fileName);
+
+                    string filePath = Path.Combine(_env.WebRootPath, "assets", "images", dbCategory.Image);
+
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+
+                    filePath = Path.Combine(_env.WebRootPath, "assets", "images", fileName);
 
                     using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
                     {
@@ -211,6 +219,7 @@ namespace Allup.Areas.Manage.Controllers
 
                     category.Image = fileName;
                     dbCategory.Image = category.Image;
+                    dbCategory.ParentId = null;
                 }
 
             }

@@ -1,0 +1,129 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Create";
+    IEnumerable<Category> categories = ViewBag.Categories;
+    SelectList selectListCategories = new SelectList(categories, nameof(Category.Id), nameof(Category.Name));
+    IEnumerable<Brand> brands = ViewBag.Brands;
+    SelectList selectListBrands = new SelectList(brands, nameof(Brand.Id), nameof(Brand.Name));
+    IEnumerable<Tag> tags = ViewBag.Tags;
+    SelectList selectListTags = new SelectList(tags, nameof(Tag.Id), nameof(Tag.Name));
+}
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Product Create</h1>
+
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price"></label>
+                <input asp-for="Price" class="form-control">
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DiscountedPrice"></label>
+                <input asp-for="DiscountedPrice" class="form-control">
+                <span asp-validation-for="DiscountedPrice" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ExTag"></label>
+                <input asp-for="ExTag" class="form-control">
+                <span asp-validation-for="ExTag" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Count"></label>
+                <input asp-for="Count" class="form-control">
+                <span asp-validation-for="Count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label asp-for="SmallDescription"></label>
+                <input asp-for="SmallDescription" class="form-control">
+                <span asp-validation-for="SmallDescription" class="text-danger"></span>
+            </div>
+
+            <div class="form-check">
+                <input asp-for="IsBestSeller" class="form-check-input">
+                <label asp-for="IsBestSeller" class="form-check-label"></label>
+                <span asp-validation-for="IsBestSeller" class="text-danger"></span>
+            </div>
+
+            <div class="form-check">
+                <input asp-for="IsFeatured" class="form-check-input">
+                <label asp-for="IsFeatured" class="form-check-label"></label>
+                <span asp-validation-for="IsFeatured" class="text-danger"></span>
+            </div>
+
+            <div class="form-check">
+                <input asp-for="IsNewArrival" class="form-check-input">
+                <label asp-for="IsNewArrival" class="form-check-label"></label>
+                <span asp-validation-for="IsNewArrival" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MainFile"></label>
+                <input asp-for="MainFile" class="form-control-file">
+                <span asp-validation-for="MainFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="HoverFile"></label>
+                <input asp-for="HoverFile" class="form-control-file">
+                <span asp-validation-for="HoverFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Files"></label>
+                <input asp-for="Files" class="form-control-file">
+                <span asp-validation-for="Files" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId"></label>
+                <select asp-for="CategoryId" class="form-control" asp-items="selectListCategories">
+                    <option value="">Select a Category</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrandId"></label>
+                <select asp-for="BrandId" class="form-control" asp-items="selectListBrands">
+                    <option value="">Select a Category</option>
+                </select>
+                <span asp-validation-for="BrandId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TagIds"></label>
+                <select asp-for="TagIds" class="form-control" asp-items="selectListTags">
+                    <option value="">Select a Category</option>
+                </select>
+                <span asp-validation-for="TagIds" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#Description'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+}

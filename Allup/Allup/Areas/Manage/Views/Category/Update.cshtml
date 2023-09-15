@@ -27,7 +27,7 @@
             <div class="imgContainer mb-3">
                 <div class="form-group">
                     <label asp-for="File"></label>
-                    <input asp-for="File" class="form-control-file" placeholder="Image">
+                    <input asp-for="File" accept="image/*" class="form-control-file" placeholder="Image">
                     <span asp-validation-for="File" class="text-danger"></span>
                 </div>
                @if (!string.IsNullOrWhiteSpace(Model.Image))

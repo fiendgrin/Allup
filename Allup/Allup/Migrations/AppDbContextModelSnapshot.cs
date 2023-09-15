@@ -131,7 +131,7 @@ namespace Allup.Migrations
                     b.Property<int?>("BrandId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("CeatedBy")
@@ -164,7 +164,6 @@ namespace Allup.Migrations
                         .HasColumnType("money");
 
                     b.Property<string>("HoverImage")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -181,18 +180,16 @@ namespace Allup.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("MainImage")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<int>("Number")
+                    b.Property<int?>("Number")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("money");
 
                     b.Property<string>("Seria")
-                        .IsRequired()
                         .HasMaxLength(4)
                         .HasColumnType("nvarchar(4)");
 
@@ -464,14 +461,12 @@ namespace Allup.Migrations
             modelBuilder.Entity("Allup.Models.Product", b =>
                 {
                     b.HasOne("Allup.Models.Brand", "Brand")
-                        .WithMany()
+                        .WithMany("Products")
                         .HasForeignKey("BrandId");
 
                     b.HasOne("Allup.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId");
 
                     b.Navigation("Brand");
 
@@ -492,7 +487,7 @@ namespace Allup.Migrations
             modelBuilder.Entity("Allup.Models.ProductTag", b =>
                 {
                     b.HasOne("Allup.Models.Product", "Product")
-                        .WithMany()
+                        .WithMany("ProductTags")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -508,14 +503,23 @@ namespace Allup.Migrations
                     b.Navigation("Tag");
                 });
 
+            modelBuilder.Entity("Allup.Models.Brand", b =>
+                {
+                    b.Navigation("Products");
+                });
+
             modelBuilder.Entity("Allup.Models.Category", b =>
                 {
                     b.Navigation("Children");
+
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Allup.Models.Product", b =>
                 {
                     b.Navigation("ProductImages");
+
+                    b.Navigation("ProductTags");
                 });
 #pragma warning restore 612, 618
         }

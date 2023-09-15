@@ -59,6 +59,12 @@
                     <span>Categories</span>
                 </a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" asp-controller="Product" asp-action="index" asp-area="manage">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Products</span>
+                </a>
+            </li>
            @* <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -339,6 +345,7 @@
 
     <!-- Core plugin JavaScript-->
     <script src="~/manage/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="~/manage/js/sb-admin-2.min.js"></script>
@@ -349,7 +356,7 @@
     <!-- Page level custom scripts -->
     <script src="~/manage/js/demo/chart-area-demo.js"></script>
     <script src="~/manage/js/demo/chart-pie-demo.js"></script>
-    <script src="~/manage/js/custom.js"></script>
+    <script src="~/manage/js/custom.js" asp-append-version="true"></script>
     @RenderSection("Scripts",false);
 
 </body>
