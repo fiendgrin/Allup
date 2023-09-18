@@ -88,7 +88,6 @@ namespace Allup.Areas.Manage.Controllers
             }
 
 
-
             List<ProductTag> productTags = new List<ProductTag>();
             if (product.TagIds != null && product.TagIds.Count() > 0)
             {
@@ -267,6 +266,16 @@ namespace Allup.Areas.Manage.Controllers
 
                 product.ProductImages = productImages;
                 dbProduct.ProductImages = product.ProductImages;
+                foreach (ProductImage productImage1 in dbProduct.ProductImages)
+                {
+                    string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", productImage1.Image);
+
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+
             }
 
 
@@ -275,13 +284,25 @@ namespace Allup.Areas.Manage.Controllers
             {
                 product.MainImage = await product.MainFile.Save(_env.WebRootPath, new string[] { "assets", "images", "product" });
                 dbProduct.MainImage = product.MainImage;
+                string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", dbProduct.MainImage);
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
             }
 
 
             if (product.HoverFile != null)
             {
                 product.HoverImage = await product.HoverFile.Save(_env.WebRootPath, new string[] { "assets", "images", "product" });
-                dbProduct.MainImage = product.MainImage;
+                dbProduct.HoverImage = product.HoverImage;
+                string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", dbProduct.HoverImage);
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
             }
 
 
