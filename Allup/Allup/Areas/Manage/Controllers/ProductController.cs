@@ -183,9 +183,16 @@ namespace Allup.Areas.Manage.Controllers
 
             if (id == null) return BadRequest();
 
-            Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id && p.IsDeleted == false);
+            Product? product = await _context.Products
+                .Include(p=>p.ProductImages.Where(pi=>pi.IsDeleted==false))
+                //.Include(p => p.ProductTags.Where(pi => pi.IsDeleted == false))
+                .FirstOrDefaultAsync(p => p.Id == id && p.IsDeleted == false);
 
             if (product == null) return BadRequest();
+
+            product.TagIds = await _context.ProductTags
+                .Where(pt=>pt.ProductId == product.Id && pt.IsDeleted == false)
+                .Select(x=>x.TagId).ToListAsync();
 
             return View(product);
         }
