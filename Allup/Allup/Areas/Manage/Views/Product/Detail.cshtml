@@ -1,0 +1,92 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Product Deatail";
+    bool firstImage = false;
+}
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Product Deatail</h1>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card" style="width: 18rem;">
+            @if (Model.MainImage != null)
+            {
+                <img class="card-img-top" src="~/assets/images/product/@Model.MainImage" alt="Card image cap">
+            }
+            <div class="card-body">
+                <h5 class="card-title">@Model.Title</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 mt-3">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Price</th>
+                    <th>Discounted Price</th>
+                    <th>ExTax</th>
+                    <th>Tags</th>
+                    <th>Count</th>
+                    <th>Brand Name</th>
+                    <th>Category Name</th>
+                    <th>Created At</th>
+                    <th>Created By</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.Price</td>
+                    <td>@(Model.DiscountedPrice == 0 ? "No Discount" : Model.DiscountedPrice)</td>
+                    <td>@Model.ExTag</td>
+                    <td style="max-width:250px; overflow:auto">@string.Join(",",Model.ProductTags?.Select(t=>t.Tag.Name))</td>
+                    <td>@Model.Count</td>
+                    <td>@(Model.Brand != null ? Model.Brand.Name : "")</td>
+                    <td>@(Model.Category != null ? Model.Category.Name : "")</td>
+                    <td>@Model.CreatedAt</td>
+                    <td>@Model.CeatedBy</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <table class="table table-bordered table-striped mt-3">
+            <thead>
+                <tr>
+
+                    <th>Small Description</th>
+                    <th>Description</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="overflow:auto; max-height:20px">@Model.SmallDescription</td>
+                    <td style="overflow:auto; max-height:20px">@Html.Raw(Model.Description)</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    @if (Model.ProductImages != null && Model.ProductImages.Count() > 0)
+    {
+        <div class="col-lg-12 mt-3">
+            <h1 class="h3 mb-3 text-gray-800">Product Images</h1>
+            <div class="row">
+                @foreach (ProductImage productImage in Model.ProductImages)
+                {
+                    <div>
+                        <img class="col d-flex" style="width:250px" src="~/assets/images/product/@productImage.Image" alt="First slide">
+                    </div>
+                }
+                <div />
+            </div>
+        </div>
+    }
+    <div class="mt-3 col-lg-12">
+        <a asp-area="manage" asp-controller="Product" asp-action="Index" class="btn btn-primary">Go Home</a>
+    </div>
+</div>

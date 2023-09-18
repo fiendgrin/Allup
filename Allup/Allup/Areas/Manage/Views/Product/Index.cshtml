@@ -41,9 +41,9 @@
                             <img style="width:100px" class="" src="~/assets/images/product/@product.MainImage">
                         </td>
                         <td>@product.Title</td>
-                        <td>@product.Category.Name</td>
+                        <td>@product.Category?.Name</td>
                         <td>@product.Brand?.Name</td>
-                        <td>@string.Join(",",product.ProductTags?.Select(t=>t.Tag.Name))</td>
+                        <td style="max-width:250px; overflow:hidden">@string.Join(",",product.ProductTags?.Select(t=>t.Tag.Name))</td>
                         <td>@product.Price</td>
                         <td>@product.DiscountedPrice</td>
                         <td>@product.CreatedAt.ToString("yyyy / MM / dd")</td>

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Allup.Attributes.ValidationAttributes;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Allup.Models
@@ -7,18 +8,18 @@ namespace Allup.Models
     {
         [StringLength(255)]
         public string Title { get; set; }
-        [Column(TypeName ="money")]
+        [Column(TypeName = "money")]
         public double Price { get; set; }
         [Column(TypeName = "money")]
         public double DiscountedPrice { get; set; }
         [Column(TypeName = "money")]
         public double ExTag { get; set; }
-        [Range(0,int.MaxValue)]
+        [Range(0, int.MaxValue)]
         public int Count { get; set; }
         [StringLength(1000)]
         public string SmallDescription { get; set; }
         [StringLength(5000)]
-        public string Description { get; set;}
+        public string Description { get; set; }
         [StringLength(4)]
         public string? Seria { get; set; }
         [Range(1, int.MaxValue)]
@@ -37,13 +38,19 @@ namespace Allup.Models
         public int? BrandId { get; set; }
         public Brand? Brand { get; set; }
 
-        public List<ProductImage>? ProductImages { get; set;}
+        public List<ProductImage>? ProductImages { get; set; }
         public IEnumerable<ProductTag>? ProductTags { get; set; }
 
+        [FileTypes("image/png","image/jpeg")]
+        [MaxFileSize(2)]
         [NotMapped]
-        public IFormFile? MainFile { get; set; }    
+        public IFormFile? MainFile { get; set; }
+        [FileTypes("image/png", "image/jpeg")]
+        [MaxFileSize(2)]
         [NotMapped]
         public IFormFile? HoverFile { get; set; }
+        [FileTypes("image/png", "image/jpeg")]
+        [MaxFileSize(2)]
         [NotMapped]
         public IEnumerable<IFormFile>? Files { get; set; }
         [NotMapped]

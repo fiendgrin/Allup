@@ -25,6 +25,8 @@ namespace Allup.Areas.Manage.Controllers
         //4.Create(Post)
         //5.Update(Get)
         //6.Update(Post)
+        //7.Delete(Get)
+        //8.DeleteCategory
 
         //=============================================================
 
@@ -248,7 +250,7 @@ namespace Allup.Areas.Manage.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
+        //7.Delete(Get)
         public async Task<IActionResult> Delete(int?id) 
         {
             if (id == null) return BadRequest();
@@ -261,7 +263,7 @@ namespace Allup.Areas.Manage.Controllers
 
             return View(category);
         }
-
+        //8.DeleteCategory
         public async Task<IActionResult> DeleteCategory(int? id)
         {
             if (id == null) return BadRequest();
