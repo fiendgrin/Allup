@@ -39,7 +39,7 @@ namespace Allup.Models
         public Brand? Brand { get; set; }
 
         public List<ProductImage>? ProductImages { get; set; }
-        public IEnumerable<ProductTag>? ProductTags { get; set; }
+        public List<ProductTag>? ProductTags { get; set; }
 
         [FileTypes("image/png","image/jpeg")]
         [MaxFileSize(2)]

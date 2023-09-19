@@ -4,6 +4,7 @@ using Allup.Models;
 using Allup.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Drawing2D;
 
 namespace Allup.Areas.Manage.Controllers
 {
@@ -24,6 +25,7 @@ namespace Allup.Areas.Manage.Controllers
         //4.Create(Post)
         //5.Update(Get)
         //6.Update(Post)
+        //7.DeleteImage
 
         //=============================================================
 
@@ -184,15 +186,15 @@ namespace Allup.Areas.Manage.Controllers
             if (id == null) return BadRequest();
 
             Product? product = await _context.Products
-                .Include(p=>p.ProductImages.Where(pi=>pi.IsDeleted==false))
+                .Include(p => p.ProductImages.Where(pi => pi.IsDeleted == false))
                 //.Include(p => p.ProductTags.Where(pi => pi.IsDeleted == false))
                 .FirstOrDefaultAsync(p => p.Id == id && p.IsDeleted == false);
 
             if (product == null) return BadRequest();
 
             product.TagIds = await _context.ProductTags
-                .Where(pt=>pt.ProductId == product.Id && pt.IsDeleted == false)
-                .Select(x=>x.TagId).ToListAsync();
+                .Where(pt => pt.ProductId == product.Id && pt.IsDeleted == false)
+                .Select(x => x.TagId).ToListAsync();
 
             return View(product);
         }
@@ -205,24 +207,52 @@ namespace Allup.Areas.Manage.Controllers
             ViewBag.Brands = await _context.Brands.Where(b => b.IsDeleted == false).ToListAsync();
             ViewBag.Tags = await _context.Tags.Where(t => t.IsDeleted == false).ToListAsync();
 
-            if (!ModelState.IsValid) return View(product);
 
             if (id == null) return BadRequest();
 
-            Product dbProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == product.Id && p.IsDeleted == false);
+            if (product.Id != id) return BadRequest();
+
+
+            Product? dbProduct = await _context.Products
+                .Include(p => p.ProductImages.Where(pi => pi.IsDeleted == false))
+                .Include(p => p.ProductTags.Where(pi => pi.IsDeleted == false))
+                .FirstOrDefaultAsync(p => p.Id == product.Id && p.IsDeleted == false);
 
             if (dbProduct == null) return NotFound();
+
+            dbProduct.TagIds = product.TagIds;
+
+            if (!ModelState.IsValid) return View(product);
+
+            int canUpload = 10 - dbProduct.ProductImages.Count;
+
+            if (product.Files != null && product.Files.Count() > canUpload)
+            {
+                ModelState.AddModelError("Files", $"Maximum of 10 Images, you only have space for {canUpload} more");
+                return View(dbProduct);
+            }
 
             if (product.CategoryId == null || !await _context.Categories.AnyAsync(c => c.IsDeleted == false && c.Id == product.CategoryId))
             {
                 ModelState.AddModelError("CategoryId", $"{product.CategoryId} is Incorrect");
-                return View(product);
+                return View(dbProduct);
             }
 
             if (product.BrandId != null && !await _context.Brands.AnyAsync(b => b.IsDeleted == false && b.Id == product.BrandId))
             {
                 ModelState.AddModelError("BrandId", $"{product.BrandId} is Incorrect");
-                return View(product);
+                return View(dbProduct);
+            }
+
+            if (dbProduct.ProductTags != null && dbProduct.ProductTags.Count() > 0)
+            {
+                foreach (ProductTag productTag in dbProduct.ProductTags)
+                {
+                    productTag.IsDeleted = true;
+                    productTag.DeletedBy = "User";
+                    productTag.DeletedAt = DateTime.Now;
+
+                }
             }
 
             List<ProductTag> productTags = new List<ProductTag>();
@@ -233,7 +263,7 @@ namespace Allup.Areas.Manage.Controllers
                     if (!await _context.Tags.AnyAsync(t => t.IsDeleted == false && t.Id == tagId))
                     {
                         ModelState.AddModelError("TagIds", $"Tag Id{tagId} is Incorrect");
-                        return View(product);
+                        return View(dbProduct);
                     }
 
                     ProductTag productTag = new ProductTag
@@ -244,18 +274,28 @@ namespace Allup.Areas.Manage.Controllers
                 }
             }
 
-            product.ProductTags = productTags;
-            dbProduct.ProductTags = product.ProductTags;
+            dbProduct.ProductTags.AddRange(productTags);
 
-            //if (product.Files == null)
-            //{
-            //    ModelState.AddModelError("Files", $"Minimum 1 file");
-            //    return View(product);
-            //}
-            if (product.Files != null && product.Files.Count() > 10)
+            if (product.MainFile != null)
             {
-                ModelState.AddModelError("Files", $"Maximum of 10 files is allowed");
-                return View(product);
+                string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", dbProduct.MainImage);
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+                product.MainImage = await product.MainFile.Save(_env.WebRootPath, new string[] { "assets", "images", "product" });
+                dbProduct.MainImage = product.MainImage;
+            }
+
+            if (product.HoverFile != null)
+            {
+                string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", dbProduct.HoverImage);
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+                product.HoverImage = await product.HoverFile.Save(_env.WebRootPath, new string[] { "assets", "images", "product" });
+                dbProduct.HoverImage = product.HoverImage;
             }
 
             List<ProductImage> productImages = new List<ProductImage>();
@@ -271,27 +311,10 @@ namespace Allup.Areas.Manage.Controllers
                     productImages.Add(productImage);
                 }
 
-                product.ProductImages = productImages;
-                dbProduct.ProductImages = product.ProductImages;
-              
+                dbProduct.ProductImages.AddRange(productImages);
+
 
             }
-
-
-
-            if (product.MainFile != null)
-            {
-                product.MainImage = await product.MainFile.Save(_env.WebRootPath, new string[] { "assets", "images", "product" });
-                dbProduct.MainImage = product.MainImage;
-            }
-
-
-            if (product.HoverFile != null)
-            {
-                product.HoverImage = await product.HoverFile.Save(_env.WebRootPath, new string[] { "assets", "images", "product" });
-                dbProduct.HoverImage = product.HoverImage;
-            }
-
 
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == product.CategoryId);
             Brand brand = await _context.Brands.FirstOrDefaultAsync(b => b.Id == product.BrandId);
@@ -308,32 +331,160 @@ namespace Allup.Areas.Manage.Controllers
 
             dbProduct.Seria = product.Seria;
             dbProduct.Number = product.Number;
-            if (product.Title != null && product.Title.Length > 0)
-            {
-                dbProduct.Title = product.Title.Trim();
 
-            }
-            if (product.Description != null && product.Description.Length > 0)
-            { dbProduct.Description = product.Description.Trim(); }
-            if (product.SmallDescription != null && product.SmallDescription.Length > 0)
-            { dbProduct.SmallDescription = product.SmallDescription.Trim(); }
-            if (product.ExTag.ToString().Length > 0)
-            { dbProduct.ExTag = product.ExTag; }
-            if (product.Price.ToString().Length > 0)
-            {
-                dbProduct.Price = product.Price;
-            }
-            if (product.DiscountedPrice.ToString().Length > 0)
-            {
-                dbProduct.DiscountedPrice = product.DiscountedPrice;
-            }
+            dbProduct.Title = product.Title.Trim();
+
+            dbProduct.Description = product.Description.Trim();
+
+            dbProduct.SmallDescription = product.SmallDescription.Trim();
+
+            dbProduct.ExTag = product.ExTag;
+
+            dbProduct.Price = product.Price;
+
+            dbProduct.DiscountedPrice = product.DiscountedPrice;
+
+            dbProduct.IsBestSeller = product.IsBestSeller;
+            dbProduct.IsFeatured = product.IsFeatured;
+            dbProduct.IsNewArrival = product.IsNewArrival;
+
             dbProduct.BrandId = product.BrandId;
+
             dbProduct.CategoryId = product.CategoryId;
+
             dbProduct.UpdatedBy = "User";
+
             dbProduct.UpdatedAt = DateTime.Now;
 
             await _context.SaveChangesAsync();
 
+
+            return RedirectToAction(nameof(Index));
+        }
+        //7.DeleteImage
+        public async Task<IActionResult> DeleteImage(int? id, int? imageId)
+        {
+            if (id == null) return BadRequest();
+
+            if (imageId == null) return BadRequest();
+
+            Product? product = await _context.Products
+                .Include(p => p.ProductImages.Where(pi => pi.IsDeleted == false))
+                .FirstOrDefaultAsync(p => p.Id == id && p.IsDeleted == false);
+
+            if (product == null) return NotFound();
+            
+                
+            
+
+            if (!product.ProductImages.Any(pi => pi.Id == imageId)) return NotFound();
+
+            if (product.ProductImages.Count <= 1) return BadRequest();
+
+            product.ProductImages.FirstOrDefault(pi => pi.Id == imageId).IsDeleted = true;
+            product.ProductImages.FirstOrDefault(pi => pi.Id == imageId).DeletedAt = DateTime.Now;
+            product.ProductImages.FirstOrDefault(pi => pi.Id == imageId).DeletedBy = "User";
+
+            string fileName = product.ProductImages.FirstOrDefault(pi => pi.Id == imageId).Image;
+            await _context.SaveChangesAsync();
+            string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", fileName);
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
+
+            return PartialView("_DeleteImagePartial", product.ProductImages.Where(p => p.IsDeleted == false).ToList());
+        }
+        //8.Delete
+
+        public async Task<IActionResult> Delete(int? id) 
+        {
+            if (id == null) return BadRequest();
+            Product product = await _context.Products
+                .Include(p => p.Brand).Include(p => p.Category)
+                .Include(p => p.ProductImages.Where(pi => pi.IsDeleted == false))
+                .Include(p => p.ProductTags.Where(pi => pi.IsDeleted == false)).ThenInclude(pt => pt.Tag)
+                .FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == id);
+
+            if (product == null) return NotFound();
+
+            return View(product);
+        }
+
+        public async Task<IActionResult> DeleteProduct(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            Product product = await _context.Products
+               .Include(p => p.Brand).Include(p => p.Category)
+               .Include(p => p.ProductImages.Where(pi => pi.IsDeleted == false))
+               .Include(p => p.ProductTags.Where(pi => pi.IsDeleted == false)).ThenInclude(pt => pt.Tag)
+               .FirstOrDefaultAsync(p => p.IsDeleted == false && p.Id == id);
+
+            if (product == null) return NotFound();
+
+
+            if (product.ProductTags != null && product.ProductTags.Count > 0)
+            {
+                foreach (ProductTag productTag in product.ProductTags)
+                {
+                    productTag.IsDeleted = true;
+                    productTag.DeletedBy = "User";
+                    productTag.DeletedAt = DateTime.Now;
+                }
+            }
+
+            if (product.ProductImages != null && product.ProductImages.Count > 0)
+            {
+                foreach (ProductImage productImage in product.ProductImages)
+                {
+                    productImage.IsDeleted = true;
+                    productImage.DeletedBy = "User";
+                    productImage.DeletedAt = DateTime.Now;
+                }
+            }
+
+            product.IsDeleted = true;
+            product.DeletedBy = "User";
+            product.DeletedAt = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+
+            if (!string.IsNullOrWhiteSpace(product.MainImage))
+            {
+                string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", product.MainImage);
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+
+            }
+
+            if (!string.IsNullOrWhiteSpace(product.HoverImage))
+            {
+                string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", product.HoverImage);
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+
+            }
+
+            foreach (ProductImage productImage1 in product.ProductImages)
+            {
+                if (!string.IsNullOrWhiteSpace(productImage1.Image))
+                {
+                    string filePath = Path.Combine(_env.WebRootPath, "assets", "images", "product", productImage1.Image);
+
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+
+                }
+            }
 
             return RedirectToAction(nameof(Index));
         }

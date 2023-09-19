@@ -77,28 +77,25 @@
                 <input asp-for="MainFile" class="form-control-file">
                 <span asp-validation-for="MainFile" class="text-danger"></span>
             </div>
-            <div>
-                <img style="width:100px" src="~/assets/images/product/@Model.MainImage">
+            <div >
+                <img class="border border-dark" style="width:100px" src="~/assets/images/product/@Model.MainImage">
             </div>
             <div class="form-group">
                 <label asp-for="HoverFile"></label>
                 <input asp-for="HoverFile" class="form-control-file">
                 <span asp-validation-for="HoverFile" class="text-danger"></span>
             </div>
-            <div>
-                <img style="width:100px" src="~/assets/images/product/@Model.HoverImage">
+            <div >
+                <img class="border border-dark" style="width:100px" src="~/assets/images/product/@Model.HoverImage">
             </div>
             <div class="form-group">
                 <label asp-for="Files"></label>
                 <input asp-for="Files" class="form-control-file">
                 <span asp-validation-for="Files" class="text-danger"></span>
             </div>
-            @foreach (ProductImage productImage in Model.ProductImages)
-            {
-                <div>
-                    <img style="width:100px" src="~/assets/images/product/@productImage.Image">
-                </div>
-            }
+           <div class="imageContainer d-flex flex-wrap">
+                @await Html.PartialAsync("_DeleteImagePartial",Model.ProductImages)
+           </div>
             <div class="form-group">
                 <label asp-for="CategoryId"></label>
                 <select asp-for="CategoryId" class="form-control" asp-items="selectListCategories">

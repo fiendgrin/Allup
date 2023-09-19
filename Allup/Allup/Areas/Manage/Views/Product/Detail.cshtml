@@ -1,7 +1,6 @@
 ﻿@model Product
 @{
     ViewData["Title"] = "Product Deatail";
-    bool firstImage = false;
 }
 
 <!-- Page Heading -->
@@ -75,11 +74,11 @@
     {
         <div class="col-lg-12 mt-3">
             <h1 class="h3 mb-3 text-gray-800">Product Images</h1>
-            <div class="row">
+            <div style="width:1150px" class="d-flex flex-wrap">
                 @foreach (ProductImage productImage in Model.ProductImages)
                 {
-                    <div>
-                        <img class="col d-flex" style="width:250px" src="~/assets/images/product/@productImage.Image" alt="First slide">
+                    <div class="mt-4">
+                        <img class="mr-xl-4 border border-dark" style="width:200px" src="~/assets/images/product/@productImage.Image" alt="First slide">                      
                     </div>
                 }
                 <div />
