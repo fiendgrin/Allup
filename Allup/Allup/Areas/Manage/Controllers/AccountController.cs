@@ -11,11 +11,13 @@ namespace Allup.Areas.Manage.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly SignInManager<AppUser> _signInManager;
 
-        public AccountController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager)
+        public AccountController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _signInManager = signInManager;
         }
 
         public async Task<IActionResult> Register()
@@ -62,32 +64,52 @@ namespace Allup.Areas.Manage.Controllers
 
             await _userManager.AddToRoleAsync(appUser, "Admin");
 
-            return Ok();
+            return RedirectToAction(nameof(Login));
         }
 
-        //public async Task<IActionResult> CreateSuperAdmin() 
-        //{
-        //    AppUser appUser = new AppUser
-        //    {
-        //        Email="superadmin@gmail.com",
-        //        UserName = "superadmin"
-        //    };
-
-        //    await _userManager.CreateAsync(appUser, "SuperAdmin666");
-        //    await _userManager.AddToRoleAsync(appUser, "SuperAdmin");
+        public IActionResult Login() 
+        {
+            return View();
+        }
 
 
-        //    return Ok("Super Admin Created");
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginVM loginVM) 
+        {
+            if (!ModelState.IsValid) 
+            {
+                return View(loginVM);
+            }
 
+            AppUser appUser = await _userManager.FindByEmailAsync(loginVM.Email);
 
-        //public async Task<IActionResult> CreateRole(RegisterVM registerVM) 
-        //{
-        //    await _roleManager.CreateAsync(new IdentityRole("SuperAdmin"));
-        //    await _roleManager.CreateAsync(new IdentityRole("Admin"));
-        //    await _roleManager.CreateAsync(new IdentityRole("Member"));
+            if (appUser == null) 
+            {
+                ModelState.AddModelError("", "Email or Password are incorrect");
+                return View(loginVM);
+            }
 
-        //    return Ok("Roles Created");
-        //}
+            //if (await _userManager.CheckPasswordAsync(appUser,loginVM.Password))
+            //{
+            //    ModelState.AddModelError("", "Email or Password are incorrect");
+            //    return View(loginVM);
+            //}
+
+            Microsoft.AspNetCore.Identity.SignInResult signInResult = await _signInManager.PasswordSignInAsync(appUser, loginVM.Password, true, true);
+           
+            if (!signInResult.Succeeded) 
+            {
+                ModelState.AddModelError("", "Email or password are incorrect");
+                return View(loginVM);
+            }
+
+            if (!signInResult.IsLockedOut)
+            {
+                ModelState.AddModelError("", "Your Account is blocked");
+                return View(loginVM);
+            }
+
+            return RedirectToAction("Index","Dashboard", new {area="manage" });
+        }
     }
 }
