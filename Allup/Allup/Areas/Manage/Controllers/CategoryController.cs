@@ -67,6 +67,7 @@ namespace Allup.Areas.Manage.Controllers
         }
         //4.Create(Post)
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Category category)
         {
             List<Category> categories = await _context.Categories
@@ -156,6 +157,7 @@ namespace Allup.Areas.Manage.Controllers
         }
         //6.Update(Post)
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int? id, Category category)
         {
             ViewBag.Categories = await _context.Categories

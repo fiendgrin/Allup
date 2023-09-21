@@ -2,6 +2,7 @@
 using Allup.Helpers;
 using Allup.Models;
 using Allup.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Drawing.Drawing2D;
@@ -26,6 +27,8 @@ namespace Allup.Areas.Manage.Controllers
         //5.Update(Get)
         //6.Update(Post)
         //7.DeleteImage
+        //8.Delete
+        //9.DeleteProduct
 
         //=============================================================
 
@@ -58,6 +61,7 @@ namespace Allup.Areas.Manage.Controllers
         }
 
         //3.Create(Get)
+        [Authorize(Roles ="Admin,SuperAdmin")]
         public async Task<IActionResult> Create()
         {
             ViewBag.Categories = await _context.Categories.Where(c => c.IsDeleted == false).ToListAsync();
@@ -69,6 +73,8 @@ namespace Allup.Areas.Manage.Controllers
 
         //4.Create(Post)
         [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Create(Product product)
         {
             ViewBag.Categories = await _context.Categories.Where(c => c.IsDeleted == false).ToListAsync();
@@ -201,6 +207,7 @@ namespace Allup.Areas.Manage.Controllers
 
         //6.Update(Post)
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int? id, Product product)
         {
             ViewBag.Categories = await _context.Categories.Where(c => c.IsDeleted == false).ToListAsync();
@@ -395,8 +402,8 @@ namespace Allup.Areas.Manage.Controllers
 
             return PartialView("_DeleteImagePartial", product.ProductImages.Where(p => p.IsDeleted == false).ToList());
         }
+        
         //8.Delete
-
         public async Task<IActionResult> Delete(int? id) 
         {
             if (id == null) return BadRequest();
@@ -410,7 +417,7 @@ namespace Allup.Areas.Manage.Controllers
 
             return View(product);
         }
-
+        //9.DeleteProduct
         public async Task<IActionResult> DeleteProduct(int? id)
         {
             if (id == null) return BadRequest();

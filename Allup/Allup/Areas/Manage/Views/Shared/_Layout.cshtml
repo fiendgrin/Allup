@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@inject UserManager<AppUser> userManager
+@{
+    AppUser appUser = null;
+    if (User.Identity.IsAuthenticated)
+    {
+        appUser = await userManager.FindByNameAsync(User.Identity.Name);
+    }
+}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,6 +21,10 @@
 
     <!-- Custom fonts for this template-->
     <link href="~/manage/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css
+" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
@@ -65,12 +77,12 @@
                     <span>Products</span>
                 </a>
             </li>
-           @* <!-- Divider -->
+            @* <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Interface
+            Interface
             </div>*@
 
         </ul>
@@ -258,16 +270,19 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                     src="~/manage/img/undraw_profile.svg">
-                            </a>
+                            @if (appUser != null)
+                            {
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">@appUser.Name @appUser.SurName</span>
+                                    <img class="img-profile rounded-circle"
+                                         src="~/manage/img/undraw_profile.svg">
+                                </a>
+                            }
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                  aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" asp-area="manage" asp-controller="Account" asp-action="Profile">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -280,7 +295,7 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -293,7 +308,7 @@
                 <!-- End of Topbar -->
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-        @RenderBody()
+                    @RenderBody()
                 </div>
                 <!-- /.container-fluid -->
 
@@ -333,7 +348,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" asp-area="manage" asp-controller="Account" asp-action="Logout">Logout</a>
                 </div>
             </div>
         </div>
@@ -342,6 +357,9 @@
     <!-- Bootstrap core JavaScript-->
     <script src="~/manage/vendor/jquery/jquery.min.js"></script>
     <script src="~/manage/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js
+"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="~/manage/vendor/jquery-easing/jquery.easing.min.js"></script>

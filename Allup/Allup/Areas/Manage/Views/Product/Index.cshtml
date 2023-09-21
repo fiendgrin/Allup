@@ -7,9 +7,12 @@
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Products</h1>
-    <a asp-area="manage" asp-controller="Product" asp-action="Create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-        Create
-    </a>
+    @if (User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
+    {
+        <a asp-area="manage" asp-controller="Product" asp-action="Create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            Create
+        </a>
+    }
 </div>
 
 <div class="row">

@@ -31,9 +31,12 @@ builder.Services.AddHttpContextAccessor();
 
 
 var app = builder.Build();
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.UseStaticFiles();
+app.UseSession();
 app.MapControllerRoute("Area", "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
 app.MapControllerRoute("Default","{controller=Home}/{action=Index}/{id?}");
-app.UseSession();
-app.UseStaticFiles();
 
 app.Run();

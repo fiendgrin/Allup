@@ -58,6 +58,7 @@ namespace Allup.Areas.Manage.Controllers
 
         //4.Create(Post)
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Brand brand) 
         {
             if (!ModelState.IsValid) return View(brand);
@@ -90,6 +91,7 @@ namespace Allup.Areas.Manage.Controllers
 
         //6.Update(Post)
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int? id ,Brand brand) 
         {
             if (id == null) return BadRequest();
