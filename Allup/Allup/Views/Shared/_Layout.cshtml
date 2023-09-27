@@ -1,8 +1,15 @@
 ﻿@inject ILayoutService layoutService
+@inject UserManager<AppUser> userManager
 @{
     Dictionary<string, string> settings = await layoutService.GetSettingsAsync();
     List<Category> categories = await layoutService.GetCategoriesAsync();
     List<BasketVM> basketVMs = await layoutService.GetBasketsAsync();
+
+    AppUser? appUser = null;
+    if (User.Identity.IsAuthenticated && User.IsInRole("Member"))
+    {
+        appUser = await userManager.FindByNameAsync(User.Identity.Name);
+    }
 }
 <!doctype html>
 <html class="no-js" lang="en">
@@ -77,11 +84,21 @@
                                     <div class="dropdown">
                                         <button type="button" id="setting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setting <i class="icon ion-chevron-down"></i></button>
 
-                                        <ul class="dropdown-menu" aria-labelledby="setting">
-                                            <li><a href="my-account.html">My account</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="login.html">Sign in</a></li>
-                                        </ul>
+                                        @if (appUser != null)
+                                        {
+                                            <ul class="dropdown-menu" aria-labelledby="setting">
+                                                <li><a asp-controller="Account" asp-action="Profile">@appUser.Name</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a asp-controller="Account" asp-action="Logout">Sign Out</a></li>
+                                            </ul>
+                                        }
+                                        else
+                                        {
+                                            <ul class="dropdown-menu" aria-labelledby="setting">
+                                                <li><a asp-controller="Account" asp-action="Login">Sign In</a></li>
+                                                <li><a asp-controller="Account" asp-action="Register">Sign Up</a></li>
+                                            </ul>
+                                        }
                                     </div>
                                 </li>
                                 <li>
@@ -155,7 +172,6 @@
                                     </form>
                                     <div style="position:absolute; z-index:10; width:100%;background-color:white;overflow:auto;padding:0px 10px; max-height:250px">
                                         <ul id="searchBody">
-
                                         </ul>
                                     </div>
                                 </div>
@@ -872,7 +888,7 @@
     <!--====== Vendors js ======-->
     <script src="~/assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="~/assets/js/vendor/modernizr-3.7.1.min.js"></script>
-
+    @RenderSection("Scripts",false)
     <!--====== Plugins js ======-->
     <script src="~/assets/js/plugins/popper.min.js"></script>
     <script src="~/assets/js/plugins/bootstrap.min.js"></script>

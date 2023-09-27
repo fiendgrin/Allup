@@ -2,6 +2,7 @@ using Allup.DataAccessLayer;
 using Allup.Interfaces;
 using Allup.Models;
 using Allup.Services;
+using Allup.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -25,6 +26,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 })
     .AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
+builder.Services.Configure<SmtpSetting>(builder.Configuration.GetSection("SmtpSetting"));
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
 
