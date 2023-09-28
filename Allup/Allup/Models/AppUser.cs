@@ -13,5 +13,8 @@ namespace Allup.Models
         public string? Name { get; set; }
         [StringLength(255)]
         public string? SurName { get; set; }
+        public IEnumerable<Address>? Addresses { get; set; }
+        public IEnumerable<Basket>? Baskets { get; set; }
+
     }
 }

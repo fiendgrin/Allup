@@ -19,6 +19,9 @@ namespace Allup.DataAccessLayer
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+
 
     }
 }

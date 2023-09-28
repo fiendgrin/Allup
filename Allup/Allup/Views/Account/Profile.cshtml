@@ -1,6 +1,13 @@
 ﻿@model ProfileVM
 @{
     ViewData["Title"] = "Profile";
+
+    bool isAddress = TempData["Tab"]?.ToString() == "Address";
+    bool isOrder = TempData["Tab"]?.ToString() == "Order";
+    bool isAccount = TempData["Tab"]?.ToString() == "Account";
+    bool isDashboard = TempData["Tab"]?.ToString() == null;
+    bool AddressError = TempData["address"]?.ToString() == "true";
+    bool editAddressError = TempData["EditAddress"]?.ToString() == "true";
 }
 <!--====== Breadcrumb Part Start ======-->
 
@@ -25,16 +32,16 @@
                 <div class="my-account-menu mt-30">
                     <ul class="nav account-menu-list flex-column nav-pills" id="pills-tab" role="tablist">
                         <li>
-                            <a class="@(TempData["Tab"] == "Dashboard"?"active":"")" id="pills-dashboard-tab" data-toggle="pill" href="#pills-dashboard" role="tab" aria-controls="pills-dashboard" aria-selected="@(TempData["Tab"] == "Dashboard"?true:false)"><i class="far fa-tachometer-alt-fast"></i> Dashboard</a>
+                            <a class="@(isDashboard?"active":"")" id="pills-dashboard-tab" data-toggle="pill" href="#pills-dashboard" role="tab" aria-controls="pills-dashboard" aria-selected="@(isDashboard?true:false)"><i class="far fa-tachometer-alt-fast"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a class="@(TempData["Tab"] == "Order"?"active":"")" id="pills-order-tab" data-toggle="pill" href="#pills-order" role="tab" aria-controls="pills-order" aria-selected="@(TempData["Tab"] == "Order"?true:false)"><i class="far fa-shopping-cart"></i> Order</a>
+                            <a class="@(isOrder?"active":"")" id="pills-order-tab" data-toggle="pill" href="#pills-order" role="tab" aria-controls="pills-order" aria-selected="@(isOrder?true:false)"><i class="far fa-shopping-cart"></i> Order</a>
                         </li>
                         <li>
-                            <a class="@(TempData["Tab"] == "Address"?"active":"")" id="pills-address-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="@(TempData["Tab"] == "Address"?true:false)"><i class="far fa-map-marker-alt"></i> Address</a>
+                            <a class="@(isAddress?"active":"")" id="pills-address-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="@(isAddress?true:false)"><i class="far fa-map-marker-alt"></i> Address</a>
                         </li>
                         <li>
-                            <a class="@(TempData["Tab"] == "Account"?"active":"")" id="pills-account-tab" data-toggle="pill" href="#pills-account" role="tab" aria-controls="pills-account" aria-selected="@(TempData["Tab"] == "Account"?true:false)"><i class="far fa-user"></i> Account Details</a>
+                            <a class="@(isAccount?"active":"")" id="pills-account-tab" data-toggle="pill" href="#pills-account" role="tab" aria-controls="pills-account" aria-selected="@(isAccount?true:false)"><i class="far fa-user"></i> Account Details</a>
                         </li>
                         <li>
                             <a asp-controller="Account" asp-action="Logout"><i class="far fa-sign-out-alt"></i> Logout</a>
@@ -44,7 +51,7 @@
             </div>
             <div class="col-xl-8 col-md-8">
                 <div class="tab-content my-account-tab mt-30" id="pills-tabContent">
-                    <div class="tab-pane fade @(TempData["Tab"] == "Dashboard"?"show active":"")" id="pills-dashboard" role="tabpanel" aria-labelledby="pills-dashboard-tab">
+                    <div class="tab-pane fade @(isDashboard?"show active":"")" id="pills-dashboard" role="tabpanel" aria-labelledby="pills-dashboard-tab">
                         <div class="my-account-dashboard account-wrapper">
                             <h4 class="account-title">Dashboard</h4>
                             <div class="welcome-dashboard">
@@ -53,7 +60,7 @@
                             <p class="mt-25">From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.</p>
                         </div>
                     </div>
-                    <div class="tab-pane fade @(TempData["Tab"] == "Order"?"show active":"")" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab">
+                    <div class="tab-pane fade @(isOrder?"show active":"")" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab">
                         <div class="my-account-order account-wrapper">
                             <h4 class="account-title">Orders</h4>
                             <div class="account-table text-center mt-30 table-responsive">
@@ -98,18 +105,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade @(TempData["Tab"] == "Address"?"show active":"")" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">
+                    <div class="tab-pane fade @(isAddress?"show active":"")" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">
                         <div class="my-account-address account-wrapper">
                             <h4 class="account-title">Payment Method</h4>
-                            <div class="account-address mt-30">
-                                <h6 class="name">Alex Tuntuni</h6>
-                                <p>1355 Market St, Suite 900 <br> San Francisco, CA 94103</p>
-                                <p>Mobile: (123) 456-7890</p>
-                                <a class="main-btn main-btn-2" href="#"><i class="far fa-edit"></i> Edit Address</a>
+                            <a class="main-btn main-btn-2 addAddressBtn @( AddressError || editAddressError ? "d-none":"")" href="#"><i class="far fa-edit"></i> Edit Address</a>
+                            <div class="addressForm @(AddressError? "":"d-none")">
+                                @await Html.PartialAsync("_AddressPartial",Model.Address)
+                            </div>
+                            <div class="editAddressForm @(editAddressError? "":"d-none")">
+                                @if(editAddressError)
+                                {
+                                    @await Html.PartialAsync("_EditAddressPartial",Model.Address)
+                                }
+                            </div>
+                            <div class="addressContainer row @(AddressError || editAddressError? "d-none":"")">
+                               @foreach (Address address in Model.Addresses.OrderByDescending(a=>a.isDefault))
+                                {
+                                    <div class="account-address mt-30 col-lg-3">
+                                        <h6 class="name">
+                                            @address.Country
+                                            @if (address.isDefault)
+                                            {
+                                                <span class="badge badge-pill badge-info">Default</span>
+                                            }
+                                        </h6>
+                                        <p>@address.Line1<br>@address.Line2, @address.PostalCode</p>
+                                        <p>@address.Town</p>
+                                        <p>@address.State</p>
+                                        <a class="main-btn main-btn-2 editAddressBtn" asp-controller="Account" asp-action="editAddress" asp-route-id="@address.Id"><i class="far fa-edit"></i> Edit Address</a>
+                                    </div>
+                                }
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade @(TempData["Tab"] == "Account"?"show active":"")" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab">
+                    <div class="tab-pane fade @(isAccount?"show active":"")" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab">
                         @await Html.PartialAsync("_ProfileAccountPartial",Model.ProfileAcoountVM)
                     </div>
                 </div>

@@ -135,23 +135,47 @@
     let arr = $('#navBarMenuContent').children();
 
     $(window).on("load", function () {
-        for (var i = 0; i < arr.length; i++)
-        {
+        for (var i = 0; i < arr.length; i++) {
             let path = "/" + $(arr[i]).find("a:eq(0)").text();
             if (window.location.pathname == path) {
                 $(arr[i]).addClass('active');
-            } else
-            {
+            } else {
                 $(arr[i]).removeClass('active')
             }
             if (window.location.pathname == "/" && path == "/Home") {
                 $(arr[i]).addClass('active');
-            } else if (window.location.pathname == "/Product" && path == "/Shop")
-            {
+            } else if (window.location.pathname == "/Product" && path == "/Shop") {
                 $(arr[i]).addClass('active');
 
             }
 
         }
     });
+
+    $('.addAddressBtn').click(function (e) {
+        e.preventDefault();
+        $('.addressForm').removeClass('d-none');
+        $('.addAddressBtn').addClass('d-none');
+        $('.AddressContainer').addClass('d-none');
+    });
+
+    $('.goBackBtn').click(function (e) {
+        e.preventDefault();
+        $('.addressForm').addClass('d-none');
+        $('.addAddressBtn').removeClass('d-none');
+        $('.AddressContainer').removeClass('d-none');
+    });
+
+    $('.editAddressBtn').click(function (e) {
+        e.preventDefault();
+        $('.addAddressBtn').addClass('d-none');
+        $('.AddressContainer').addClass('d-none');
+        $('.editAddressForm').removeClass('d-none');
+        let url = $(this).attr('href');
+        fetch(url)
+            .then(res => res.text())
+            .then(data => {
+                $('.editAddressForm').html(data);
+            })
+    })
 });

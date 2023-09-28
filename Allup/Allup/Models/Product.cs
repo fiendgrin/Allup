@@ -40,6 +40,8 @@ namespace Allup.Models
 
         public List<ProductImage>? ProductImages { get; set; }
         public List<ProductTag>? ProductTags { get; set; }
+        public IEnumerable<Basket>? Baskets { get; set; }
+
 
         [FileTypes("image/png","image/jpeg")]
         [MaxFileSize(2)]

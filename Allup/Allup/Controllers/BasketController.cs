@@ -1,6 +1,7 @@
 ﻿using Allup.DataAccessLayer;
 using Allup.Models;
 using Allup.ViewModels.BasketVMs;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -10,10 +11,12 @@ namespace Allup.Controllers
     public class BasketController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly UserManager<AppUser> _userManager;
 
-        public BasketController(AppDbContext context)
+        public BasketController(AppDbContext context, UserManager<AppUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
 
@@ -69,6 +72,46 @@ namespace Allup.Controllers
             basket = JsonConvert.SerializeObject(basketVMs);
 
             Response.Cookies.Append("basket", basket);
+
+            if (User.Identity.IsAuthenticated && User.IsInRole("Member"))
+            {
+                AppUser appUser = await _userManager.Users
+                    .Include(b=>b.Baskets.Where(b=>b.IsDeleted == false))
+                    .FirstOrDefaultAsync(u=>u.UserName == User.Identity.Name);
+
+                if (appUser != null && appUser.Baskets != null && appUser.Baskets.Count() > 0)
+                {
+                    Basket userBasket = appUser.Baskets.FirstOrDefault(b => b.ProductId == id);
+                    if (userBasket != null)
+                    {
+                        userBasket.Count = basketVMs.FirstOrDefault(b => b.Id == id).Count;
+                    }
+                    else
+                    {
+                        Basket userNewBasket = new Basket
+                        {
+                            UserId = appUser.Id,
+                            ProductId = id,
+                            Count = basketVMs.FirstOrDefault(b => b.Id == id).Count
+                        };
+
+                        await _context.AddAsync(userNewBasket);
+                    }
+
+                }
+                else 
+                {
+                    Basket userNewBasket = new Basket
+                    {
+                        UserId = appUser.Id,
+                        ProductId = id,
+                        Count = basketVMs.FirstOrDefault(b => b.Id == id).Count
+                    };
+
+                    await _context.AddAsync(userNewBasket);
+                }
+                await _context.SaveChangesAsync();
+            }
 
             foreach (BasketVM basketVM in basketVMs)
             {
